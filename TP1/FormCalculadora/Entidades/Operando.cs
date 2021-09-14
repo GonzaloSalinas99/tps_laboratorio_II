@@ -5,7 +5,6 @@ namespace Entidades
     public class Operando
     {
         private double numero;
-
         public Operando()
         {
             this.numero = 0;

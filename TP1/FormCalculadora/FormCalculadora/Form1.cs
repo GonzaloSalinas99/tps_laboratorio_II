@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 using Entidades;
@@ -46,17 +47,47 @@ namespace FormCalculadora
 
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine($"{numero1} {operador} {numero2} = {resultado}");
+
                 lstOperaciones.Items.Add(sb.ToString());
             }
-
-
         }
-
-
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+            Limpiar();
+        }
+
+        public void Limpiar()
+        {
             lstOperaciones.Items.Clear();
+            lblResultado.ResetText();
+            txtNumero1.ResetText();
+            txtNumero2.ResetText();
+            cmbOperador.ResetText();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            btnCerrar.DialogResult =  MessageBox.Show("Seguro que desea salir?", "Salir", MessageBoxButtons.YesNo);
+            if(btnCerrar.DialogResult == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btnConvertirABinario_Click(object sender, EventArgs e)
+        {
+            Operando numeroAConvertir = new Operando();
+            string resultado = lblResultado.Text;
+
+            lblResultado.Text = numeroAConvertir.DecimalBinario(resultado);
+        }
+
+        private void btnConvertirADecimal_Click(object sender, EventArgs e)
+        {
+            Operando numeroAConvertir = new Operando();
+            string resultado = lblResultado.Text;
+            lblResultado.Text = numeroAConvertir.BinarioDecimal(resultado);
         }
     }
 }

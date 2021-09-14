@@ -36,9 +36,9 @@ namespace FormCalculadora
             this.btnOperar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnConvertirDecimalABinario = new System.Windows.Forms.Button();
             this.btnConvertirADecimal = new System.Windows.Forms.Button();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.btnConvertirABinario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNumero2
@@ -101,15 +101,7 @@ namespace FormCalculadora
             this.btnCerrar.TabIndex = 7;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
-            // 
-            // btnConvertirDecimalABinario
-            // 
-            this.btnConvertirDecimalABinario.Location = new System.Drawing.Point(12, 180);
-            this.btnConvertirDecimalABinario.Name = "btnConvertirDecimalABinario";
-            this.btnConvertirDecimalABinario.Size = new System.Drawing.Size(213, 23);
-            this.btnConvertirDecimalABinario.TabIndex = 8;
-            this.btnConvertirDecimalABinario.Text = "Convertir a Binario";
-            this.btnConvertirDecimalABinario.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnConvertirADecimal
             // 
@@ -119,6 +111,7 @@ namespace FormCalculadora
             this.btnConvertirADecimal.TabIndex = 9;
             this.btnConvertirADecimal.Text = "Convertir a Decimal";
             this.btnConvertirADecimal.UseVisualStyleBackColor = true;
+            this.btnConvertirADecimal.Click += new System.EventHandler(this.btnConvertirADecimal_Click);
             // 
             // lblResultado
             // 
@@ -128,6 +121,17 @@ namespace FormCalculadora
             this.lblResultado.TabIndex = 10;
             this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnConvertirABinario
+            // 
+            this.btnConvertirABinario.AccessibleName = "";
+            this.btnConvertirABinario.Location = new System.Drawing.Point(12, 180);
+            this.btnConvertirABinario.Name = "btnConvertirABinario";
+            this.btnConvertirABinario.Size = new System.Drawing.Size(205, 23);
+            this.btnConvertirABinario.TabIndex = 11;
+            this.btnConvertirABinario.Text = "Convertir a Binario";
+            this.btnConvertirABinario.UseVisualStyleBackColor = true;
+            this.btnConvertirABinario.Click += new System.EventHandler(this.btnConvertirABinario_Click);
+            // 
             // FormCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -135,9 +139,9 @@ namespace FormCalculadora
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(688, 218);
+            this.Controls.Add(this.btnConvertirABinario);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnConvertirADecimal);
-            this.Controls.Add(this.btnConvertirDecimalABinario);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnOperar);
@@ -165,9 +169,9 @@ namespace FormCalculadora
         private System.Windows.Forms.Button btnOperar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button btnConvertirDecimalABinario;
         private System.Windows.Forms.Button btnConvertirADecimal;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Button btnConvertirABinario;
     }
 }
 
