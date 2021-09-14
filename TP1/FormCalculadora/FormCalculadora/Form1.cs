@@ -35,6 +35,7 @@ namespace FormCalculadora
             }
             else
             {
+                Console.Beep();
                 numero1 = txtNumero1.Text;
                 numero2 = txtNumero2.Text;
                 operador = char.Parse( cmbOperador.Text);
@@ -54,6 +55,7 @@ namespace FormCalculadora
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+            Console.Beep();
             Limpiar();
         }
 
@@ -68,6 +70,7 @@ namespace FormCalculadora
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            Console.Beep();
             btnCerrar.DialogResult =  MessageBox.Show("Seguro que desea salir?", "Salir", MessageBoxButtons.YesNo);
             if(btnCerrar.DialogResult == DialogResult.Yes)
             {
@@ -77,6 +80,7 @@ namespace FormCalculadora
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
+            Console.Beep();
             Operando numeroAConvertir = new Operando();
             string resultado = lblResultado.Text;
 
@@ -85,8 +89,10 @@ namespace FormCalculadora
 
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
+            Console.Beep();
             Operando numeroAConvertir = new Operando();
             string resultado = lblResultado.Text;
+
             lblResultado.Text = numeroAConvertir.BinarioDecimal(resultado);
         }
     }
