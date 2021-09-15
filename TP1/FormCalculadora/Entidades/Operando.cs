@@ -3,30 +3,50 @@
 namespace Entidades
 {
     public class Operando
-    {
+    {   
+        /// <summary>
+        /// Atributo de la clase tipo double
+        /// </summary>
         private double numero;
+
+        /// <summary>
+        /// Constructor sin parametro que asigna el valor 0 al atributo.
+        /// </summary>
         public Operando()
         {
             this.numero = 0;
         }
-
+        /// <summary>
+        /// Constructor que asgina el valor al atributo recibido por el parametro
+        /// </summary>
+        /// <param name="numero">Parametro de tipo double a ser asignado</param>
         public Operando(double numero)
         {
             this.numero = numero;
         }
 
+        /// <summary>
+        /// Constructor que asgina el valor al atributo recibido por el parametro
+        /// </summary>
+        /// <param name="strNumero">Parametro de tipo string a ser asignado</param>
         public Operando(string strNumero)
         {
             this.Numero = strNumero;
         }
-
+        /// <summary>
+        /// Propiedad solamente de escritura, que asigna el valor al atributo, previamente validado.
+        /// </summary>
         private string Numero
         {
             set { this.numero = ValidarOperando(value); }
         }
 
 
-
+        /// <summary>
+        /// Valida el operando recibido por parametro para que sea si o si un numero.
+        /// </summary>
+        /// <param name="strNumero">Parametro de tipo string a ser validado.</param>
+        /// <returns></returns>
         private double ValidarOperando(string strNumero)
         {
             double numeroValidado;
@@ -37,7 +57,12 @@ namespace Entidades
             return 0;
         }
 
-
+        /// <summary>
+        /// Valida el parametro recibido para que sea si o si un numero binario.
+        /// </summary>
+        /// <param name="binario">Parametro de tipo string a ser validado.</param>
+        /// <returns>Retorna TRUE si la cadena recibida es un numero binario.
+        ///          Retorna FALSE si la cadena recibida no es un numero binario.</returns>
         private bool EsBinario(string binario)
         {
             
