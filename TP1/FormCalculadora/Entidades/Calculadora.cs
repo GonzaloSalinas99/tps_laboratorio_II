@@ -38,7 +38,6 @@ namespace Entidades
 
                 case '/':
 
-                    // resultado =  num1 / num2;
                     double aux = num1 / num2;
                     resultado = Math.Round(aux, 2);
                     break;

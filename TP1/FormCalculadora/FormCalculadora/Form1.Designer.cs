@@ -75,6 +75,9 @@ namespace FormCalculadora
             // 
             // btnOperar
             // 
+            this.btnOperar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOperar.Location = new System.Drawing.Point(12, 128);
             this.btnOperar.Name = "btnOperar";
             this.btnOperar.Size = new System.Drawing.Size(135, 23);

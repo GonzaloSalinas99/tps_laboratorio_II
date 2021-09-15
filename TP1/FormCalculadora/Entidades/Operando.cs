@@ -40,7 +40,9 @@ namespace Entidades
 
         private bool EsBinario(string binario)
         {
+            
             char[] validacion = binario.ToCharArray();
+
             for(int i=0;i<validacion.Length;i++)
             {
                 if(validacion[i] != '1' && validacion[i]!='0')
@@ -56,17 +58,20 @@ namespace Entidades
             string retorno = "Valor inválido";
             double numDecimal = 0;                                      
             int incrementoPotencia = 0;
-            if(EsBinario(binario))
-            {           
-                for (int i = binario.Length - 1; i >= 0; i--)           
-                {                                                      
-                    if (binario[i] == '1')                             
-                    {                                                  
-                        numDecimal += Math.Pow(2, incrementoPotencia);  
-                    }                                                   
-                    incrementoPotencia++;                              
-                }                                                                             
-                retorno = numDecimal.ToString();
+            if (binario !="" && binario is not null)
+            { 
+                if(EsBinario(binario))
+                {           
+                    for (int i = binario.Length - 1; i >= 0; i--)           
+                    {                                                      
+                        if (binario[i] == '1')                             
+                        {                                                  
+                            numDecimal += Math.Pow(2, incrementoPotencia);  
+                        }                                                   
+                        incrementoPotencia++;                              
+                    }                                                                             
+                    retorno = numDecimal.ToString();
+                }
             }
             return retorno;
         }
