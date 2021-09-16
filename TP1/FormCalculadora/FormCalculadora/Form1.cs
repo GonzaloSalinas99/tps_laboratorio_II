@@ -83,16 +83,13 @@ namespace FormCalculadora
         ///         Retorna FALSE si la cadena contiene al menos una letra</returns>
         public static bool ValidarCadenaIngresada(string numeroAValidar)
         {
-            char[] cadena = numeroAValidar.ToCharArray();
-
-            for (int i = 0; i < cadena.Length; i++)
+            double validacion;
+            if(double.TryParse(numeroAValidar,out validacion)==false)
             {
-                if (cadena[i] <= '0' || cadena[i] >= '9')
-                {
-                    return false;
-                }
+                return false;
             }
             return true;
+
         }
 
 
