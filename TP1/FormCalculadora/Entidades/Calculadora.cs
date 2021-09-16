@@ -23,7 +23,7 @@ namespace Entidades
             return retorno;
         }
         /// <summary>
-        /// Realiza la operacion matematica indicada a travez de los operandos y del operador.
+        /// Realiza la operacion matematica entre los operandos indicada a travez del operador.
         /// </summary>
         /// <param name="num1">Primer operando para realizar el calculo.</param>
         /// <param name="num2">Segundo operando para realizar el calculo.</param>
