@@ -77,7 +77,11 @@ namespace Entidades
             }
             return true;
         }
-
+        /// <summary>
+        /// Convierte el numero binario recibido por parametro a numero decimal. Se valida que el parametro sea si o si un numero binario.
+        /// </summary>
+        /// <param name="binario">Parametro de tipo string que contendra el numero binario a ser convertido en decimal.</param>
+        /// <returns>Retorna el numero decimal, si pudo ser convertido, en tipo string. De lo contrario retorna "Valor invalido".</returns>
         public string BinarioDecimal(string binario)
         {
             string retorno = "Valor inválido";
@@ -100,7 +104,11 @@ namespace Entidades
             }
             return retorno;
         }
-
+        /// <summary>
+        /// Convierte el numero decimal recibido por parametro a numero binario. Se valida que el parametro sea si o si un numero.
+        /// </summary>
+        /// <param name="binario">Parametro de tipo double que contendra el numero decimal a ser convertido en binario.</param>
+        /// <returns>Retorna el numero binario, si pudo ser convertido, en tipo string. De lo contrario retorna "Valor invalido".</returns>
         public string DecimalBinario(double numero)
         {
             string retorno = "Valor Invalido";
@@ -112,7 +120,11 @@ namespace Entidades
             }
             return retorno;
         }
-
+        /// <summary>
+        /// Convierte el numero binario recibido por parametro a numero decimal. Se valida que el parametro sea si o si un numero binario.
+        /// </summary>
+        /// <param name="binario">Parametro de tipo string que contendra el numero binario a ser convertido a decimal.</param>
+        /// <returns>Retorna el numero decimal, si pudo ser convertido, en tipo string. De lo contrario retorna "Valor invalido".</returns>
         public string DecimalBinario(string numero)
         {
             string retorno = "Valor Invalido";
@@ -123,21 +135,46 @@ namespace Entidades
             }
             return retorno;
         }
-
+        /// <summary>
+        /// Sobrecarga del operador '+' para realizar la suma entre dos operandos.
+        /// </summary>
+        /// <param name="n1">Primer operando para realizar el calculo.</param>
+        /// <param name="n2">Segundo operando para realizar el calculo.</param>
+        /// <returns>Retorna el resultado de la suma entre los operandos.</returns>
         public static double operator + (Operando n1, Operando n2)
         {
             return n1.numero + n2.numero;
         }
 
+        /// <summary>
+        /// Sobrecarga del operador '-' para realizar la resta entre dos operandos.
+        /// </summary>
+        /// <param name="n1">Primer operando para realizar el calculo.</param>
+        /// <param name="n2">Segundo operando para realizar el calculo.</param>
+        /// <returns>Retorna el resultado de la resta entre los operandos.</returns>
         public static double operator -(Operando n1, Operando n2)
         {
             return n1.numero - n2.numero;
         }
+
+        /// <summary>
+        /// Sobrecarga del operador '*' para realizar la multiplicacion entre dos operandos.
+        /// </summary>
+        /// <param name="n1">Primer operando para realizar el calculo.</param>
+        /// <param name="n2">Segundo operando para realizar el calculo.</param>
+        /// <returns>Retorna el resultado de la multiplicacion entre los operandos.</returns>
         public static double operator *(Operando n1, Operando n2)
         {
             return n1.numero * n2.numero;
         }
 
+        /// <summary>
+        /// Sobrecarga del operador '/' para realizar la division entre dos operandos.Validando que el segundo operador no sea 0 (ya que no se puede realizar)
+        /// </summary>
+        /// <param name="n1">Primer operando para realizar el calculo.</param>
+        /// <param name="n2">Segundo operando para realizar el calculo.</param>
+        /// <returns>Retorna el resultado de la division entre los operandos.
+        ///          Si el segundo operando es 0, retorna el valor minimo del tipo Double.</returns>
         public static double operator /(Operando n1, Operando n2)
         {
             double resultado;
@@ -151,5 +188,21 @@ namespace Entidades
             }
             return resultado;
         }
+
+        public static bool ValidarNumeroIngresado(string numeroAValidar)
+        {
+            char[] cadena = numeroAValidar.ToCharArray();
+
+            for(int i=0;i<cadena.Length;i++)
+            {
+                if(cadena[i] <= '0' || cadena[i]>='9')
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+
     }
 }
