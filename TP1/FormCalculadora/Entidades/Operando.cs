@@ -20,7 +20,7 @@ namespace Entidades
         /// Constructor que asgina el valor al atributo recibido por el parametro
         /// </summary>
         /// <param name="numero">Parametro de tipo double a ser asignado</param>
-        public Operando(double numero)
+        public Operando(double numero):this()
         {
             this.numero = numero;
         }
@@ -29,7 +29,7 @@ namespace Entidades
         /// Constructor que asgina el valor al atributo recibido por el parametro
         /// </summary>
         /// <param name="strNumero">Parametro de tipo string a ser asignado</param>
-        public Operando(string strNumero)
+        public Operando(string strNumero):this()
         {
             this.Numero = strNumero;
         }
