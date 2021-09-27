@@ -25,6 +25,8 @@ namespace FormCalculadora
             cmbOperador.Items.Add("-");
             cmbOperador.Items.Add("*");
             cmbOperador.Items.Add("/");
+            
+            
         }
         /// <summary>
         /// Realiza la operacion indicada por el usuario y valida que los txtBox tengan un valor ingresado. Agrega la operacion realizada a un listBox.
@@ -38,7 +40,7 @@ namespace FormCalculadora
             char operador;
             double resultado;
             
-            if(txtNumero1.Text== "" || txtNumero2.Text== "" || cmbOperador.Text == "")
+            if(txtNumero1.Text== "" || txtNumero2.Text== "" )
             {
                 MessageBox.Show("Error al iniciar el calculo", "Error de ingreso");
             }
@@ -57,11 +59,18 @@ namespace FormCalculadora
                     txtNumero2.Text="0";
                 }
 
-
+                if(cmbOperador.Text == "")
+                {
+                    operador = '+';
+                }
+                else
+                {
+                    operador = char.Parse( cmbOperador.Text);
+                }
                 Console.Beep();
                 numero1 = txtNumero1.Text;
                 numero2 = txtNumero2.Text;
-                operador = char.Parse( cmbOperador.Text);
+                
 
                 Operando num1 = new Operando(numero1);
                 Operando num2 = new Operando(numero2);
@@ -101,6 +110,7 @@ namespace FormCalculadora
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Console.Beep();
+            
             Limpiar();
         }
         /// <summary>
@@ -126,6 +136,7 @@ namespace FormCalculadora
             if(btnCerrar.DialogResult == DialogResult.Yes)
             {
                 this.Close();
+               
             }
         }
         /// <summary>
@@ -154,6 +165,17 @@ namespace FormCalculadora
             string resultado = lblResultado.Text;
 
             lblResultado.Text = numeroAConvertir.BinarioDecimal(resultado);
+        }
+
+
+
+        private void FormCalculadora_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            DialogResult respuesta = MessageBox.Show("Seguro que desea salir?", "Salir", MessageBoxButtons.YesNo);
+            if(respuesta == DialogResult.Yes)
+            {
+                e.Cancel = false;
+            }
         }
     }
 }
