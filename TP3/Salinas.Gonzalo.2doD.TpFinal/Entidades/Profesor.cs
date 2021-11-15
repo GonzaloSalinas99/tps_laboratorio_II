@@ -19,6 +19,10 @@ namespace Entidades
         {
         }
 
+        public Profesor()
+        {
+        }
+
         public float Salario
         {
             get { return salario; }
@@ -38,6 +42,7 @@ namespace Entidades
             stringBuilder.AppendLine(base.ToString());
             stringBuilder.AppendLine($"Salario: {Salario}");
             stringBuilder.AppendLine($"Fecha de Ingreso: {FechaIngreso}");
+            stringBuilder.AppendLine($"Tipo Persona: {FechaIngreso}");
             stringBuilder.AppendLine("---------------------------");
 
             return stringBuilder.ToString();

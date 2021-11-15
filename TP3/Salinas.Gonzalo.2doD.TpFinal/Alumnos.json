@@ -1,0 +1,29 @@
+[
+  {
+    "FechaIngreso": "2020-02-10T00:00:00",
+    "Legajo": "123456",
+    "CuatrimestreActual": 3,
+    "Nombre": "quimey",
+    "Apellido": "espinosa",
+    "Dni": "42038629",
+    "Edad": 21
+  },
+  {
+    "FechaIngreso": "2019-02-10T00:00:00",
+    "Legajo": "1111222",
+    "CuatrimestreActual": 3,
+    "Nombre": "Alejo",
+    "Apellido": "Carmona",
+    "Dni": "12345678",
+    "Edad": 22
+  },
+  {
+    "FechaIngreso": "2021-02-10T00:00:00",
+    "Legajo": "1111",
+    "CuatrimestreActual": 3,
+    "Nombre": "Nacho",
+    "Apellido": "Giampaolo",
+    "Dni": "11223344",
+    "Edad": 22
+  }
+]

@@ -21,25 +21,19 @@ namespace Controlador
         {
             if(ValidarExtension(ruta))
             {
-                using (StreamWriter streamWriter = new StreamWriter(ruta))
-                {
-                    string textoJson = JsonSerializer.Serialize(contenido);
-                    streamWriter.Write(textoJson);
-                }
+                Serializar(ruta, contenido);
             }
         }
 
-        public void GuardarComo(string ruta, T contenido)
+        private void Serializar(string ruta, T contenido)
         {
-            if (ValidarSiExisteElArchivo(ruta) && ValidarExtension(ruta))
+            using (StreamWriter streamWriter = new StreamWriter(ruta))
             {
-                using (StreamWriter streamWriter = new StreamWriter(ruta))
-                {
-                    string textoJson = JsonSerializer.Serialize(contenido);
-                    File.WriteAllText(ruta, textoJson);
-                }
+                string json = JsonSerializer.Serialize(contenido);
+                streamWriter.Write(json);
             }
         }
+
 
         public T Leer(string ruta)
         {
@@ -51,6 +45,7 @@ namespace Controlador
                     T contenido = JsonSerializer.Deserialize<T>(json);
                     return contenido;
                 }
+
             }
             return null;
         }

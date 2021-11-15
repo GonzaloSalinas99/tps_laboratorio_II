@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Text;
-
+using System.Xml.Serialization;
 namespace Entidades
 {
+    [XmlInclude(typeof(Alumno))]
+    [XmlInclude(typeof(Profesor))]
+
     public class Persona
     {
         private string nombre;
@@ -10,26 +13,30 @@ namespace Entidades
         private string dni;
         private int edad;
 
-        protected string Nombre
+        public string Nombre
         {
             get { return this.nombre; }
             set { this.nombre = value; }
         }
 
-        protected string Apellido
+        public string Apellido
         {
             get { return this.apellido; }
             set { this.apellido = value; }
         }
-        protected string Dni
+        public string Dni
         {
             get { return this.dni; }
             set { this.dni = value; }
         }
-        protected int Edad
+        public int Edad
         {
             get { return this.edad; }
             set { this.edad = value; }
+        }
+
+        public Persona()
+        {
         }
 
         public Persona(string nombre, string apellido, string dni, int edad)
@@ -81,5 +88,7 @@ namespace Entidades
 
             return stringBuilder.ToString();
         }
+
+
     }
 }

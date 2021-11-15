@@ -9,7 +9,6 @@ namespace Controlador
     interface IArchivos<T>
     {
         public void Guardar(string ruta, T contenido);
-        public void GuardarComo(string ruta, T contenido);
         public T Leer(string ruta);
 
 

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Xml.Serialization;
 namespace Entidades
 {
+
+    [XmlInclude(typeof(Persona))]
     public class Alumno : Persona
     {
         private string legajo;
@@ -20,6 +22,10 @@ namespace Entidades
         }
 
         public Alumno(string nombre, string apellido, string dni, int edad) : base(nombre, apellido, dni, edad)
+        {
+        }
+
+        public Alumno()
         {
         }
 
@@ -48,8 +54,7 @@ namespace Entidades
             stringBuilder.AppendLine(base.ToString());
             stringBuilder.AppendLine($"Nº Legajo: {Legajo}");
             stringBuilder.AppendLine($"Cuatrimestre Cursando: {CuatrimestreActual}");
-            stringBuilder.AppendLine($"Fecha de Ingreso: {FechaIngreso.ToShortDateString()}");
-            stringBuilder.AppendLine("---------------------------");
+            stringBuilder.AppendLine($"Fecha de Ingreso: {FechaIngreso.ToShortDateString()}");            stringBuilder.AppendLine("---------------------------");
 
             return stringBuilder.ToString();
         }

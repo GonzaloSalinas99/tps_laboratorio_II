@@ -23,14 +23,6 @@ namespace Controlador
             }
         }
 
-        public void GuardarComo(string ruta, T contenido)
-        {
-            if (ValidarExtension(ruta))
-            {
-                Serializar(ruta, contenido);
-            }
-        }
-
         private void Serializar(string ruta, T contenido)
         {
             using (StreamWriter streamWriter = new StreamWriter(ruta))
