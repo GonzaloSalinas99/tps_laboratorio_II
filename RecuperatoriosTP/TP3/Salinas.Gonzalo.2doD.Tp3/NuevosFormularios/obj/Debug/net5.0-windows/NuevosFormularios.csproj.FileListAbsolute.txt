@@ -1,0 +1,6 @@
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\TP3\Salinas.Gonzalo.2doD.Tp3\NuevosFormularios\obj\Debug\net5.0-windows\Formularios.frmGuardarPersonas.resources
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\TP3\Salinas.Gonzalo.2doD.Tp3\NuevosFormularios\obj\Debug\net5.0-windows\NuevosFormularios.csproj.GenerateResource.cache
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\TP3\Salinas.Gonzalo.2doD.Tp3\NuevosFormularios\obj\Debug\net5.0-windows\NuevosFormularios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\TP3\Salinas.Gonzalo.2doD.Tp3\NuevosFormularios\obj\Debug\net5.0-windows\NuevosFormularios.AssemblyInfoInputs.cache
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\TP3\Salinas.Gonzalo.2doD.Tp3\NuevosFormularios\obj\Debug\net5.0-windows\NuevosFormularios.AssemblyInfo.cs
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\TP3\Salinas.Gonzalo.2doD.Tp3\NuevosFormularios\obj\Debug\net5.0-windows\NuevosFormularios.csproj.CoreCompileInputs.cache
