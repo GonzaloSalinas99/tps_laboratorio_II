@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

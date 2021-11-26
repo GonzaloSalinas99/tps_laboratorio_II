@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Formularios\\Formularios.csproj": {}
+    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Formularios\\Formularios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\Archivos.csproj": {
+    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\Archivos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\Archivos.csproj",
+        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\Archivos.csproj",
         "projectName": "Archivos",
-        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\Archivos.csproj",
+        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\Archivos.csproj",
         "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\obj\\",
+        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj": {
-                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj"
+              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj": {
+                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj": {
+    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj",
+        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj",
         "projectName": "Controlador",
-        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj",
+        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj",
         "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\obj\\",
+        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -96,8 +96,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -130,14 +130,14 @@
         }
       }
     },
-    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -189,14 +189,14 @@
         }
       }
     },
-    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj": {
+    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj",
+        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj",
         "projectName": "Excepciones",
-        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj",
+        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj",
         "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\obj\\",
+        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -248,14 +248,14 @@
         }
       }
     },
-    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Formularios\\Formularios.csproj": {
+    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Formularios\\Formularios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Formularios\\Formularios.csproj",
+        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Formularios\\Formularios.csproj",
         "projectName": "Formularios",
-        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Formularios\\Formularios.csproj",
+        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Formularios\\Formularios.csproj",
         "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Formularios\\obj\\",
+        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Formularios\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -277,17 +277,17 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\Archivos.csproj": {
-                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\Archivos.csproj"
+              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\Archivos.csproj": {
+                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Archivos\\Archivos.csproj"
               },
-              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj": {
-                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj"
+              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj": {
+                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj"
               },
-              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj"
               },
-              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj": {
-                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj"
+              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj": {
+                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Excepciones\\Excepciones.csproj"
               }
             }
           }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\ConsolaDePrueba\\ConsolaDePrueba.csproj",
+      "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\ConsolaDePrueba\\ConsolaDePrueba.csproj",
       "projectName": "ConsolaDePrueba",
-      "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\ConsolaDePrueba\\ConsolaDePrueba.csproj",
+      "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\ConsolaDePrueba\\ConsolaDePrueba.csproj",
       "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\ConsolaDePrueba\\obj\\",
+      "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\ConsolaDePrueba\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

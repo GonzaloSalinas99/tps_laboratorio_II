@@ -37,6 +37,8 @@ namespace Formularios
             this.btnListarAlumnosDB = new System.Windows.Forms.Button();
             this.btnListarProfesoresDB = new System.Windows.Forms.Button();
             this.lblHora = new System.Windows.Forms.Label();
+            this.btnGuardarAlumnosDB = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGuardarPersonas
@@ -51,21 +53,21 @@ namespace Formularios
             // 
             // btnMostrarAlumnos
             // 
-            this.btnMostrarAlumnos.Location = new System.Drawing.Point(40, 160);
+            this.btnMostrarAlumnos.Location = new System.Drawing.Point(23, 160);
             this.btnMostrarAlumnos.Name = "btnMostrarAlumnos";
-            this.btnMostrarAlumnos.Size = new System.Drawing.Size(136, 23);
+            this.btnMostrarAlumnos.Size = new System.Drawing.Size(178, 23);
             this.btnMostrarAlumnos.TabIndex = 2;
-            this.btnMostrarAlumnos.Text = "Mostrar Alumnos";
+            this.btnMostrarAlumnos.Text = "Mostrar Alumnos Cargados";
             this.btnMostrarAlumnos.UseVisualStyleBackColor = true;
             this.btnMostrarAlumnos.Click += new System.EventHandler(this.btnMostrarAlumnos_Click);
             // 
             // btnMostrarProfesores
             // 
-            this.btnMostrarProfesores.Location = new System.Drawing.Point(232, 160);
+            this.btnMostrarProfesores.Location = new System.Drawing.Point(217, 160);
             this.btnMostrarProfesores.Name = "btnMostrarProfesores";
-            this.btnMostrarProfesores.Size = new System.Drawing.Size(136, 23);
+            this.btnMostrarProfesores.Size = new System.Drawing.Size(178, 23);
             this.btnMostrarProfesores.TabIndex = 3;
-            this.btnMostrarProfesores.Text = "Mostrar Profesores";
+            this.btnMostrarProfesores.Text = "Mostrar Profesores Cargados";
             this.btnMostrarProfesores.UseVisualStyleBackColor = true;
             this.btnMostrarProfesores.Click += new System.EventHandler(this.btnMostrarProfesores_Click);
             // 
@@ -91,7 +93,7 @@ namespace Formularios
             // 
             // btnListarAlumnosDB
             // 
-            this.btnListarAlumnosDB.Location = new System.Drawing.Point(218, 230);
+            this.btnListarAlumnosDB.Location = new System.Drawing.Point(218, 325);
             this.btnListarAlumnosDB.Name = "btnListarAlumnosDB";
             this.btnListarAlumnosDB.Size = new System.Drawing.Size(177, 23);
             this.btnListarAlumnosDB.TabIndex = 6;
@@ -101,7 +103,7 @@ namespace Formularios
             // 
             // btnListarProfesoresDB
             // 
-            this.btnListarProfesoresDB.Location = new System.Drawing.Point(12, 230);
+            this.btnListarProfesoresDB.Location = new System.Drawing.Point(12, 325);
             this.btnListarProfesoresDB.Name = "btnListarProfesoresDB";
             this.btnListarProfesoresDB.Size = new System.Drawing.Size(177, 23);
             this.btnListarProfesoresDB.TabIndex = 7;
@@ -118,12 +120,34 @@ namespace Formularios
             this.lblHora.TabIndex = 8;
             this.lblHora.Text = "label1";
             // 
+            // btnGuardarAlumnosDB
+            // 
+            this.btnGuardarAlumnosDB.Location = new System.Drawing.Point(12, 275);
+            this.btnGuardarAlumnosDB.Name = "btnGuardarAlumnosDB";
+            this.btnGuardarAlumnosDB.Size = new System.Drawing.Size(178, 23);
+            this.btnGuardarAlumnosDB.TabIndex = 9;
+            this.btnGuardarAlumnosDB.Text = "Guardar Alumnos En DB";
+            this.btnGuardarAlumnosDB.UseVisualStyleBackColor = true;
+            this.btnGuardarAlumnosDB.Click += new System.EventHandler(this.btnGuardarAlumnosDB_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(218, 275);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Guardar Profesores En DB";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(421, 301);
+            this.ClientSize = new System.Drawing.Size(421, 369);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGuardarAlumnosDB);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.btnListarProfesoresDB);
             this.Controls.Add(this.btnListarAlumnosDB);
@@ -153,5 +177,7 @@ namespace Formularios
         private System.Windows.Forms.Button btnListarAlumnosDB;
         private System.Windows.Forms.Button btnListarProfesoresDB;
         private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Button btnGuardarAlumnosDB;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsolaDePrueba", "ConsolaD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteoMetodos", "TesteoMetodos\TesteoMetodos.csproj", "{8EE4F04A-C597-4A62-8D3D-6C4EE2EF561D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuevosFormularios", "NuevosFormularios\NuevosFormularios.csproj", "{45CBDE9D-358B-472F-A623-2B823AC8DD14}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,10 +51,6 @@ Global
 		{8EE4F04A-C597-4A62-8D3D-6C4EE2EF561D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EE4F04A-C597-4A62-8D3D-6C4EE2EF561D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EE4F04A-C597-4A62-8D3D-6C4EE2EF561D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45CBDE9D-358B-472F-A623-2B823AC8DD14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45CBDE9D-358B-472F-A623-2B823AC8DD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45CBDE9D-358B-472F-A623-2B823AC8DD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45CBDE9D-358B-472F-A623-2B823AC8DD14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

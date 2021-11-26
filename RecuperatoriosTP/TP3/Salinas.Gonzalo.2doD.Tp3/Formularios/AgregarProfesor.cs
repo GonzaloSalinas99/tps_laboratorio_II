@@ -47,10 +47,10 @@ namespace Formularios
 
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw new Excepciones.Excepciones("Ocurrio un error con la carga de datos");
+                throw new Excepciones.Excepciones("Ocurrio un error con la carga de datos",ex);
             }
         }
 

@@ -154,6 +154,7 @@ namespace Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(259, 399);
             this.Controls.Add(this.txtFechaIngreso);
             this.Controls.Add(this.lblFechaIngreso);

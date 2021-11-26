@@ -79,7 +79,7 @@ namespace Formularios
             catch (Excepciones.Excepciones ex)
             {
 
-                throw new Excepciones.Excepciones(ex.ToString());
+                throw new Excepciones.Excepciones(ex.Message,ex);
             }
         }
 

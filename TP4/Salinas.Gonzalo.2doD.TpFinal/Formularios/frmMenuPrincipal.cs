@@ -125,5 +125,15 @@ namespace Formularios
             frmMostrarPersonasDb frmMostrarPersonasDb = new frmMostrarPersonasDb(listaPersonas, new Profesor());
             frmMostrarPersonasDb.ShowDialog();
         }
+
+        private void btnGuardarAlumnosDB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

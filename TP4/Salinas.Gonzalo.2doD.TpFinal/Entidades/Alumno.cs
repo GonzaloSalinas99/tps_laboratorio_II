@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 namespace Entidades
 {
-
-    [XmlInclude(typeof(Persona))]
     public class Alumno : Persona
     {
+
         private string legajo;
         private int cuatrimestreActual;
         private DateTime fechaIngreso;

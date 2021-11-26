@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj",
+      "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj",
       "projectName": "Controlador",
-      "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj",
+      "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\Controlador.csproj",
       "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\obj\\",
+      "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Controlador\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +59,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj"
             }
           }
         }
