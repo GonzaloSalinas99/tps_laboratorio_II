@@ -44,6 +44,7 @@ namespace Formularios
             this.lblCuatrimestreCursando = new System.Windows.Forms.Label();
             this.txtFechaIngreso = new System.Windows.Forms.TextBox();
             this.lblFechaIngreso = new System.Windows.Forms.Label();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCrear
@@ -168,12 +169,25 @@ namespace Formularios
             this.lblFechaIngreso.TabIndex = 13;
             this.lblFechaIngreso.Text = "Fecha de Ingreso";
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnVolver.Location = new System.Drawing.Point(21, 426);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.TabIndex = 16;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // AgregarAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(259, 459);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.txtFechaIngreso);
             this.Controls.Add(this.lblFechaIngreso);
             this.Controls.Add(this.txtCuatrimestreCursando);
@@ -216,5 +230,6 @@ namespace Formularios
         private System.Windows.Forms.Label lblCuatrimestreCursando;
         private System.Windows.Forms.TextBox txtFechaIngreso;
         private System.Windows.Forms.Label lblFechaIngreso;
+        private System.Windows.Forms.Button btnVolver;
     }
 }

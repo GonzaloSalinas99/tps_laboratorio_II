@@ -32,11 +32,12 @@ namespace Formularios
             this.btnGuardarPersonas = new System.Windows.Forms.Button();
             this.btnGuardarProfesores = new System.Windows.Forms.Button();
             this.btnGuardarAlumnos = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGuardarPersonas
             // 
-            this.btnGuardarPersonas.Location = new System.Drawing.Point(58, 151);
+            this.btnGuardarPersonas.Location = new System.Drawing.Point(58, 121);
             this.btnGuardarPersonas.Name = "btnGuardarPersonas";
             this.btnGuardarPersonas.Size = new System.Drawing.Size(136, 23);
             this.btnGuardarPersonas.TabIndex = 5;
@@ -46,7 +47,7 @@ namespace Formularios
             // 
             // btnGuardarProfesores
             // 
-            this.btnGuardarProfesores.Location = new System.Drawing.Point(58, 95);
+            this.btnGuardarProfesores.Location = new System.Drawing.Point(58, 82);
             this.btnGuardarProfesores.Name = "btnGuardarProfesores";
             this.btnGuardarProfesores.Size = new System.Drawing.Size(136, 23);
             this.btnGuardarProfesores.TabIndex = 4;
@@ -64,12 +65,25 @@ namespace Formularios
             this.btnGuardarAlumnos.UseVisualStyleBackColor = true;
             this.btnGuardarAlumnos.Click += new System.EventHandler(this.btnGuardarAlumnos_Click);
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnVolver.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnVolver.Location = new System.Drawing.Point(12, 167);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.TabIndex = 16;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // frmGuardarPersonas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(250, 202);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnGuardarPersonas);
             this.Controls.Add(this.btnGuardarProfesores);
             this.Controls.Add(this.btnGuardarAlumnos);
@@ -88,5 +102,6 @@ namespace Formularios
         private System.Windows.Forms.Button btnGuardarPersonas;
         private System.Windows.Forms.Button btnGuardarProfesores;
         private System.Windows.Forms.Button btnGuardarAlumnos;
+        private System.Windows.Forms.Button btnVolver;
     }
 }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProcesadorOfPersona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Personas>
+    <Persona xsi:type="Alumno">
+      <Nombre>Gaston</Nombre>
+      <Apellido>Fernandez</Apellido>
+      <Dni>12345678</Dni>
+      <Edad>21</Edad>
+      <FechaIngreso>2020-07-02T00:00:00</FechaIngreso>
+      <Legajo>123123</Legajo>
+      <CuatrimestreActual>2</CuatrimestreActual>
+    </Persona>
+    <Persona xsi:type="Alumno">
+      <Nombre>Franco</Nombre>
+      <Apellido>Alvarez</Apellido>
+      <Dni>42424242</Dni>
+      <Edad>20</Edad>
+      <FechaIngreso>2021-07-10T00:00:00</FechaIngreso>
+      <Legajo>1111</Legajo>
+      <CuatrimestreActual>1</CuatrimestreActual>
+    </Persona>
+    <Persona xsi:type="Alumno">
+      <Nombre>Elias</Nombre>
+      <Apellido>Troncoso</Apellido>
+      <Dni>42038608</Dni>
+      <Edad>22</Edad>
+      <FechaIngreso>2019-02-18T00:00:00</FechaIngreso>
+      <Legajo>9999</Legajo>
+      <CuatrimestreActual>3</CuatrimestreActual>
+    </Persona>
+    <Persona xsi:type="Profesor">
+      <Nombre>Mauricio</Nombre>
+      <Apellido>Cerizza</Apellido>
+      <Dni>39213123</Dni>
+      <Edad>26</Edad>
+      <Salario>150000</Salario>
+      <FechaIngreso>2018-02-02T00:00:00</FechaIngreso>
+    </Persona>
+    <Persona xsi:type="Profesor">
+      <Nombre>Lautaro</Nombre>
+      <Apellido>Galarza</Apellido>
+      <Dni>40121234</Dni>
+      <Edad>24</Edad>
+      <Salario>98000</Salario>
+      <FechaIngreso>2021-03-11T00:00:00</FechaIngreso>
+    </Persona>
+    <Persona xsi:type="Profesor">
+      <Nombre>Mauricio</Nombre>
+      <Apellido>Davila</Apellido>
+      <Dni>33112233</Dni>
+      <Edad>29</Edad>
+      <Salario>300002</Salario>
+      <FechaIngreso>2010-01-01T00:00:00</FechaIngreso>
+    </Persona>
+  </Personas>
+</ProcesadorOfPersona>

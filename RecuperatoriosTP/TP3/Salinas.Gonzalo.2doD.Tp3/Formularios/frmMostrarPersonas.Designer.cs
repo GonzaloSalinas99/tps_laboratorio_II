@@ -30,24 +30,38 @@ namespace Formularios
         private void InitializeComponent()
         {
             this.dtgInfoPersonas = new System.Windows.Forms.DataGridView();
+            this.btnVolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgInfoPersonas)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgInfoPersonas
             // 
             this.dtgInfoPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgInfoPersonas.Location = new System.Drawing.Point(29, 42);
+            this.dtgInfoPersonas.Location = new System.Drawing.Point(29, 29);
             this.dtgInfoPersonas.Name = "dtgInfoPersonas";
             this.dtgInfoPersonas.RowTemplate.Height = 25;
-            this.dtgInfoPersonas.Size = new System.Drawing.Size(739, 190);
+            this.dtgInfoPersonas.Size = new System.Drawing.Size(702, 190);
             this.dtgInfoPersonas.TabIndex = 0;
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnVolver.Location = new System.Drawing.Point(29, 225);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.TabIndex = 16;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // frmMostrarPersonas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(800, 258);
+            this.ClientSize = new System.Drawing.Size(763, 258);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.dtgInfoPersonas);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -63,5 +77,6 @@ namespace Formularios
         #endregion
 
         private System.Windows.Forms.DataGridView dtgInfoPersonas;
+        private System.Windows.Forms.Button btnVolver;
     }
 }

@@ -17,7 +17,11 @@ namespace Controlador
         {
             get { return ".json"; }
         }
-        
+        /// <summary>
+        /// Guarda informacion en el archivo
+        /// </summary>
+        /// <param name="ruta">Ruta al archivo</param>
+        /// <param name="contenido">Informacion a guardar</param>
         public void Guardar(string ruta, T contenido)
         {
             if(ValidarExtension(ruta))
@@ -25,7 +29,11 @@ namespace Controlador
                 Serializar(ruta, contenido);
             }
         }
-
+        /// <summary>
+        /// Serializa en formato .Json
+        /// </summary>
+        /// <param name="ruta">Ruta al archivo donde se va a guardar la informacion</param>
+        /// <param name="contenido">Informacion a serializar</param>
         private void Serializar(string ruta, T contenido)
         {
             using (StreamWriter streamWriter = new StreamWriter(ruta))
@@ -35,22 +43,5 @@ namespace Controlador
             }
         }
 
-
-        public T Leer(string ruta)
-        {
-            if (ValidarSiExisteElArchivo(ruta) && ValidarExtension(ruta))
-            {
-                using (StreamReader streamReader = new StreamReader(ruta))
-                {
-
-                    string json = streamReader.ReadToEnd();
-                    T contenido = JsonSerializer.Deserialize<T>(json);
-                    return contenido;
-                    
-                }
-
-            }
-            return null;
-        }
     }
 }

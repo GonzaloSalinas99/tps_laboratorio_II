@@ -42,6 +42,7 @@ namespace Formularios
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.btnCrear = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtFechaIngreso
@@ -150,12 +151,25 @@ namespace Formularios
             this.btnCrear.UseVisualStyleBackColor = true;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnVolver.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnVolver.Location = new System.Drawing.Point(24, 363);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.TabIndex = 28;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // AgregarProfesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(259, 399);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.txtFechaIngreso);
             this.Controls.Add(this.lblFechaIngreso);
             this.Controls.Add(this.txtSalario);
@@ -174,7 +188,6 @@ namespace Formularios
             this.Name = "AgregarProfesor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarProfesor";
-            this.Load += new System.EventHandler(this.AgregarProfesor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,5 +208,6 @@ namespace Formularios
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Button btnCrear;
+        private System.Windows.Forms.Button btnVolver;
     }
 }

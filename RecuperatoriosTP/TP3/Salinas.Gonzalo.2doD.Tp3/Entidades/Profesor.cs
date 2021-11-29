@@ -25,18 +25,27 @@ namespace Entidades
         {
         }
 
+        /// <summary>
+        /// Propiedad de lectura y escritura de Salario
+        /// </summary>
         public float Salario
         {
             get { return salario; }
             set { salario = value; }
         }
 
+        /// <summary>
+        /// Propiedad de lectura y escritura de FechaIngreso
+        /// </summary>
         public DateTime FechaIngreso
         {
             get { return fechaIngreso; }
             set { fechaIngreso = value; }
         }
-
+        /// <summary>
+        /// Sobrescritura del metodo ToString() que devuelve info sobre el profesor
+        /// </summary>
+        /// <returns>string con los datos del profesor</returns>
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder();

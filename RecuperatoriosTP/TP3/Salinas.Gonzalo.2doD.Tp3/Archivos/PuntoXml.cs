@@ -15,7 +15,11 @@ namespace Controlador
         {
             get { return ".xml"; }
         }
-
+        /// <summary>
+        /// Guarda informacion en un archivo .xml
+        /// </summary>
+        /// <param name="ruta">Ruta al archivo donde se va a guardar la informacion</param>
+        /// <param name="contenido">Informacion a ser guardada</param>
         public void Guardar(string ruta, T contenido)
         {
             if (ValidarExtension(ruta))
@@ -23,7 +27,11 @@ namespace Controlador
                 Serializar(ruta, contenido);
             }
         }
-
+        /// <summary>
+        /// Serializa en formato .xml
+        /// </summary>
+        /// <param name="ruta">Ruta al archivo donde se va a serializar la informacion</param>
+        /// <param name="contenido">Infromacion a ser serializada</param>
         private void Serializar(string ruta, T contenido)
         {
             using (StreamWriter streamWriter = new StreamWriter(ruta))
@@ -32,7 +40,11 @@ namespace Controlador
                 xmlSerializer.Serialize(streamWriter, contenido);
             }
         }
-
+        /// <summary>
+        /// Lee informacion de un archivo .xml
+        /// </summary>
+        /// <param name="ruta">Ruta al archivo donde se va a realizar la lectura</param>
+        /// <returns></returns>
         public T Leer(string ruta)
         {
             if (ValidarSiExisteElArchivo(ruta) && ValidarExtension(ruta))

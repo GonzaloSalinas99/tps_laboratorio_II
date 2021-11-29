@@ -13,22 +13,34 @@ namespace Entidades
         private string dni;
         private int edad;
 
+        /// <summary>
+        /// Propiedad de lectura y escritura de Nombre
+        /// </summary>
         public string Nombre
         {
             get { return this.nombre; }
             set { this.nombre = value; }
         }
 
+        /// <summary>
+        /// Propiedad de lectura y escritura de Apellido
+        /// </summary>
         public string Apellido
         {
             get { return this.apellido; }
             set { this.apellido = value; }
         }
+        /// <summary>
+        /// Propiedad de lectura y escritura de Dni
+        /// </summary>
         public string Dni
         {
             get { return this.dni; }
             set { this.dni = value; }
         }
+        /// <summary>
+        /// Propiedad de lectura y escritura de Edad
+        /// </summary>
         public int Edad
         {
             get { return this.edad; }
@@ -60,7 +72,12 @@ namespace Entidades
             }
             return false;
         }
-
+        /// <summary>
+        /// Verfica si dos personas son iguales por su dni
+        /// </summary>
+        /// <param name="p1">persona a verificar</param>
+        /// <param name="p2">persona a verificar</param>
+        /// <returns>true si tienen el mismo numero de documento, false si no lo son</returns>
         public static bool operator ==(Persona p1, Persona p2)
         {
             if (p1 is not null && p2 is not null)
@@ -72,11 +89,21 @@ namespace Entidades
             }
             return false;
         }
-
+        /// <summary>
+        /// Verifica que dos personas no tengan el mismo Dni
+        /// </summary>
+        /// <param name="p1">persoan a verificar</param>
+        /// <param name="p2">persona a verificar</param>
+        /// <returns>true si no lo tiene, false si si</returns>
         public static bool operator !=(Persona p1, Persona p2)
         {
             return !(p1 == p2);
         }
+
+        /// <summary>
+        /// Sobrescritura del metodo ToString() que devuelve info sobre la Persona
+        /// </summary>
+        /// <returns>string con los datos de la persona</returns>
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder();

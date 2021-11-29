@@ -22,16 +22,21 @@ namespace Controlador
             set { personas = value; }
         }
 
-
-        public static bool operator ==(Procesador<T> lista, T alumno)
+        /// <summary>
+        /// Verifica que una persona no este en la lista
+        /// </summary>
+        /// <param name="lista">lista a ser verificada</param>
+        /// <param name="alumno">persona a buscar en la lista</param>
+        /// <returns>true si esta en la lista, false si no lo esta</returns>
+        public static bool operator ==(Procesador<T> lista, T persona)
         {
-            if (lista is not null && alumno is not null)
+            if (lista is not null && persona is not null)
             {
                 if (lista.personas.Count > 0)
                 {
                     foreach (T alumnoAux in lista.personas)
                     {
-                        if (alumno == alumnoAux)
+                        if (persona == alumnoAux)
                         {
                             return true;
                         }
@@ -39,46 +44,63 @@ namespace Controlador
                 }
                 else
                 {
-                    lista.personas.Add(alumno);
+                    lista.personas.Add(persona);
                     return true;
                 }
 
             }
             return false;
         }
-
-        public static bool operator !=(Procesador<T> lista, T alumno)
+        /// <summary>
+        /// Verifica que una persona no este en la lista
+        /// </summary>
+        /// <param name="lista">lista a ser verificada</param>
+        /// <param name="persona">persona a ser buscada</param>
+        /// <returns></returns>
+        public static bool operator !=(Procesador<T> lista, T persona)
         {
-            return !(lista == alumno);
+            return !(lista == persona);
         }
-
-        public static bool operator +(Procesador<T> lista, T alumno)
+        /// <summary>
+        /// Agrega una persona a la lista
+        /// </summary>
+        /// <param name="lista">lista a agregar la persona</param>
+        /// <param name="persona">persona a ser agregada</param>
+        /// <returns></returns>
+        public static bool operator +(Procesador<T> lista, T persona)
         {
-            if (lista is not null && alumno is not null && lista != alumno)
+            if (lista is not null && persona is not null && lista != persona)
             {
-                lista.personas.Add(alumno);
+                lista.personas.Add(persona);
                 return true;
             }
             return false;
         }
 
 
-
+        /// <summary>
+        /// Muestra los datos de las personas
+        /// </summary>
+        /// <returns>String con los datos</returns>
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            foreach (T alumnoAux in personas)
+            foreach (T persona in personas)
             {
-                sb.AppendLine(alumnoAux.ToString());
+                sb.AppendLine(persona.ToString());
             }
 
             return sb.ToString();
         }
-
+        /// <summary>
+        /// Verifica si el obj es del mismo tipo que T
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Equals(object obj)
         {
-            T alumnoAux = obj as T;
-            return (alumnoAux is not null && this == alumnoAux);
+            T persona = obj as T;
+            return (persona is not null && this == persona);
 
         }
 
@@ -86,11 +108,6 @@ namespace Controlador
         {
             return base.GetHashCode();
         }
-
-
-
-
-
     }
 }
 

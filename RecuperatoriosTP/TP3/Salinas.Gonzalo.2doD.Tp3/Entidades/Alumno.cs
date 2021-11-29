@@ -29,24 +29,35 @@ namespace Entidades
         {
         }
 
+        /// <summary>
+        /// Propiedad de lectura y escritura de FechaIngreso
+        /// </summary>
         public DateTime FechaIngreso
         {
             get { return fechaIngreso; }
             set { fechaIngreso = value; }
         }
 
+        /// <summary>
+        /// Propiedad de lectura y escritura de Legajo
+        /// </summary>
         public string Legajo
         {
             get { return this.legajo; }
             set { this.legajo = value; }
         }
-
+        /// <summary>
+        /// Propiedad de lectura y escritura de CuatrimestreActual
+        /// </summary>
         public int CuatrimestreActual
         {
             get { return this.cuatrimestreActual; }
             set { cuatrimestreActual = value; }
         }
-
+        /// <summary>
+        /// Sobrescritura del metodo ToString() que devuelve info sobre el Alumno
+        /// </summary>
+        /// <returns>String con los datos del alumno</returns>
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder();

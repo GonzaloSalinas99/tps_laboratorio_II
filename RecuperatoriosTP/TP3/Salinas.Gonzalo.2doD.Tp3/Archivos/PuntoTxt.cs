@@ -14,7 +14,11 @@ namespace Controlador
         {
             get { return ".txt"; }
         }
-
+        /// <summary>
+        /// Guarda la informacion en un archivo .txt
+        /// </summary>
+        /// <param name="ruta">Ruta al archivo donde se va a guardar la informacion</param>
+        /// <param name="contenido">Informacion a ser guardada</param>
         public void Guardar(string ruta, string contenido)
         {
             if(ValidarExtension(ruta))
@@ -24,18 +28,6 @@ namespace Controlador
                     streamWriter.WriteLine(contenido);
                 }
             }
-        }
-
-        public string Leer(string ruta)
-        {
-            if(ValidarExtension(ruta))
-            {
-                using (StreamReader streamReader = new StreamReader(ruta))
-                {
-                    return streamReader.ReadToEnd();
-                }
-            }
-            return null;
         }
     }
 }

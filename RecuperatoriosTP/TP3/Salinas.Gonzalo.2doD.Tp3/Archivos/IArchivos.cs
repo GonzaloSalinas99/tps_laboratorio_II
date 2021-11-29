@@ -8,9 +8,12 @@ namespace Controlador
 {
     interface IArchivos<T>
     {
+        /// <summary>
+        /// Guarda informacion en archivos
+        /// </summary>
+        /// <param name="ruta">Ruta al archivo donde se va a guardar la informacion</param>
+        /// <param name="contenido">Informacion a ser guardada</param>
         public void Guardar(string ruta, T contenido);
-        public T Leer(string ruta);
-
-
+        
     }
 }

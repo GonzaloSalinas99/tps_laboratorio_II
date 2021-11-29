@@ -22,20 +22,25 @@ namespace Formularios
             listaPersonas = personas;
             MiPersona = personaAux;
         }
-
+        /// <summary>
+        /// Devuelve el tipo de persona 
+        /// </summary>
+        /// <typeparam name="T">Tipo de objeto</typeparam>
+        /// <param name="persona">Persona a ser analizada</param>
+        /// <returns></returns>
         private Type DevolverTipoAtributo<T>(T persona)
         {
             return persona.GetType();
         }
-
+        /// <summary>
+        /// Muestra la lista de personas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmMostrarPersonas_Load(object sender, EventArgs e)
         {
             Procesador<Alumno> alumnos = new Procesador<Alumno>();
             Procesador<Profesor> profesores = new Procesador<Profesor>();
-            //Procesador<Persona> personas = new Procesador<Persona>();
-
-            //Procesador<Persona> per = new Procesador<Persona>();
-
 
             foreach (Persona personaAux in listaPersonas.Personas)
             {
@@ -72,6 +77,11 @@ namespace Formularios
                 }
                 dtgInfoPersonas.Update();
                 dtgInfoPersonas.Refresh();
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

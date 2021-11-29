@@ -25,28 +25,47 @@ namespace Formularios
             guardarArchivo.Filter = "Archivo de texto|*.txt|Archivo JSON|*.json|Archivo XML|*.xml";
             personasAGuardar = personas;
         }
-
+        /// <summary>
+        /// Guarda los datos de los alumnos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGuardarAlumnos_Click(object sender, EventArgs e)
         {
             Alumno alumnoAux = new Alumno();
             FiltroParaGuardarPersonas<Alumno>(alumnoAux);
         }
-
+        /// <summary>
+        /// Metodo para guardar en una lista dependiendo el tipo de la persona por parametro
+        /// </summary>
+        /// <typeparam name="T">Tipo del objeto</typeparam>
+        /// <param name="persona">persona para validar su tipo</param>
         private void FiltroParaGuardarPersonas<T>(T persona)
         {
             Procesador<Persona> personasAux = new Procesador<Persona>();
             foreach (Persona personaAux in personasAGuardar.Personas)
             {
-                if (personaAux.GetType() == typeof(T))
+
+                if(personaAux is Alumno && personaAux.GetType() == typeof(T))
                 {
-                    personasAux.Personas.Add(personaAux);
+                    personasAux.Personas.Add((Alumno)personaAux);
+                }
+                else
+                {
+                    if(personaAux is Profesor && personaAux.GetType() == typeof(T))
+                    {
+                        personasAux.Personas.Add((Profesor)personaAux);
+                    }
                 }
             }
             GuardarDatos(personasAux);
             MessageBox.Show("Se agregaron exitosamente");
             Close();
         }
-
+        /// <summary>
+        /// Metodo que guarda la informacion pasada por parametros en archivos
+        /// </summary>
+        /// <param name="personas">lista de personas a ser guardadas en archivos</param>
         private void GuardarDatos(Procesador<Persona> personas)
         {
             try
@@ -82,13 +101,21 @@ namespace Formularios
                 throw new Excepciones.Excepciones(ex.Message,ex);
             }
         }
-
+        /// <summary>
+        /// Guarda la informacion de los profesores
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGuardarProfesores_Click(object sender, EventArgs e)
         {
             Profesor profesorAux = new Profesor();
             FiltroParaGuardarPersonas<Profesor>(profesorAux);
         }
-
+        /// <summary>
+        /// Guarda la informacion de las personas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGuardarPersonas_Click(object sender, EventArgs e)
         {
             GuardarDatos(personasAGuardar);
@@ -99,6 +126,11 @@ namespace Formularios
         private void frmGuardarPersonas_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

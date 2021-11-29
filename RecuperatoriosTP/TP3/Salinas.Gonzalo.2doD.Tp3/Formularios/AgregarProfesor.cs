@@ -20,12 +20,11 @@ namespace Formularios
             InitializeComponent();
             listaPersonas = personas;
         }
-
-        private void AgregarProfesor_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Crea un profesor
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCrear_Click(object sender, EventArgs e)
         {
             try
@@ -53,10 +52,17 @@ namespace Formularios
                 throw new Excepciones.Excepciones("Ocurrio un error con la carga de datos",ex);
             }
         }
-
+        /// <summary>
+        /// Devuelve el procesador
+        /// </summary>
         public Procesador<Persona> DevolverProcesador
         {
             get { return listaPersonas; }
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
