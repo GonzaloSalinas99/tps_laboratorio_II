@@ -45,9 +45,6 @@ C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Sa
 C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\bin\Debug\net5.0-windows\Entidades.pdb
 C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\bin\Debug\net5.0-windows\Excepciones.pdb
 C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.AssemblyReference.cache
-C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\Formularios.AgregarAlumno.resources
-C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\Formularios.AgregarProfesor.resources
-C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\Formularios.frmGuardarPersonas.resources
 C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\Formularios.frmMenuPrincipal.resources
 C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\Formularios.frmMostrarPersonas.resources
 C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.GenerateResource.cache
@@ -60,3 +57,7 @@ C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Sa
 C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\ref\Formularios.dll
 C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\Formularios.pdb
 C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\Formularios.genruntimeconfig.cache
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\Formularios.frmAgregarPersona.resources
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\obj\Debug\net5.0-windows\Formularios.frmEstadisticas.resources
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\bin\Debug\net5.0-windows\Estadisticas.dll
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Formularios\bin\Debug\net5.0-windows\Estadisticas.pdb

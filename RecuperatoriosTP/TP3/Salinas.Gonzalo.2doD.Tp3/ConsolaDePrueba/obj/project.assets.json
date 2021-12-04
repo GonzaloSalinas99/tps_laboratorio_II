@@ -38,6 +38,20 @@
           "bin/placeholder/Entidades.dll": {}
         }
       },
+      "Estadisticas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Controlador": "1.0.0",
+          "Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Estadisticas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Estadisticas.dll": {}
+        }
+      },
       "Excepciones/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -66,6 +80,11 @@
       "path": "../Entidades/Entidades.csproj",
       "msbuildProject": "../Entidades/Entidades.csproj"
     },
+    "Estadisticas/1.0.0": {
+      "type": "project",
+      "path": "../Estadisticas/Estadisticas.csproj",
+      "msbuildProject": "../Estadisticas/Estadisticas.csproj"
+    },
     "Excepciones/1.0.0": {
       "type": "project",
       "path": "../Excepciones/Excepciones.csproj",
@@ -76,7 +95,8 @@
     "net5.0": [
       "Archivos >= 1.0.0",
       "Controlador >= 1.0.0",
-      "Entidades >= 1.0.0"
+      "Entidades >= 1.0.0",
+      "Estadisticas >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -120,6 +140,9 @@
             },
             "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj": {
               "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Entidades\\Entidades.csproj"
+            },
+            "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Estadisticas\\Estadisticas.csproj": {
+              "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP3\\Salinas.Gonzalo.2doD.Tp3\\Estadisticas\\Estadisticas.csproj"
             }
           }
         }

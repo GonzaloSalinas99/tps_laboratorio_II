@@ -10,13 +10,8 @@
     <ProjectReference Include="..\Archivos\Archivos.csproj" />
     <ProjectReference Include="..\Controlador\Controlador.csproj" />
     <ProjectReference Include="..\Entidades\Entidades.csproj" />
+    <ProjectReference Include="..\Estadisticas\Estadisticas.csproj" />
     <ProjectReference Include="..\Excepciones\Excepciones.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="frmGuardarPersonas.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 
 </Project>

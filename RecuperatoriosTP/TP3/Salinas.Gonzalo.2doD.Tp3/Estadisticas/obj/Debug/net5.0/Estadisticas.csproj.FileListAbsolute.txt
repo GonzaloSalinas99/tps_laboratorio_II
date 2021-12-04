@@ -1,0 +1,17 @@
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\obj\Debug\net5.0\Estadisticas.csproj.AssemblyReference.cache
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\obj\Debug\net5.0\Estadisticas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\obj\Debug\net5.0\Estadisticas.AssemblyInfoInputs.cache
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\obj\Debug\net5.0\Estadisticas.AssemblyInfo.cs
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\obj\Debug\net5.0\Estadisticas.csproj.CoreCompileInputs.cache
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\bin\Debug\net5.0\Estadisticas.deps.json
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\bin\Debug\net5.0\Estadisticas.dll
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\bin\Debug\net5.0\ref\Estadisticas.dll
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\bin\Debug\net5.0\Estadisticas.pdb
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\bin\Debug\net5.0\Entidades.dll
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\obj\Debug\net5.0\Estadisticas.csproj.CopyComplete
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\obj\Debug\net5.0\Estadisticas.dll
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\obj\Debug\net5.0\ref\Estadisticas.dll
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\obj\Debug\net5.0\Estadisticas.pdb
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\bin\Debug\net5.0\Controlador.dll
+C:\Users\Gonzalo\Desktop\Repositorios\tps_laboratorio_II\RecuperatoriosTP\TP3\Salinas.Gonzalo.2doD.Tp3\Estadisticas\bin\Debug\net5.0\Controlador.pdb

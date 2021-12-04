@@ -10,12 +10,16 @@ namespace Controlador
     public class Procesador<T> where T : class
     {
         private List<T> personas;
-
+        /// <summary>
+        /// Constructor sin parametros que instancia la lista personas
+        /// </summary>
         public Procesador()
         {
             personas = new List<T>();
         }
-
+        /// <summary>
+        /// Propiedad de lectura y asignacion de la lista de personas
+        /// </summary>
         public List<T> Personas
         {
             get { return personas; }
@@ -34,9 +38,9 @@ namespace Controlador
             {
                 if (lista.personas.Count > 0)
                 {
-                    foreach (T alumnoAux in lista.personas)
+                    foreach (T personaAux in lista.personas)
                     {
-                        if (persona == alumnoAux)
+                        if (persona == personaAux)
                         {
                             return true;
                         }

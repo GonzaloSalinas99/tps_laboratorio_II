@@ -3,8 +3,33 @@ using System.Text;
 using System.Xml.Serialization;
 namespace Entidades
 {
-    [XmlInclude(typeof(Alumno))]
-    [XmlInclude(typeof(Profesor))]
+    /// <summary>
+    /// Enumerado de Genero
+    /// </summary>
+    public enum EGenero
+    {
+        Masculino,
+        Femenino,
+    }
+    /// <summary>
+    /// Enumerado de Estudio Secundario
+    /// </summary>
+    public enum ESecundario
+    {
+        Completo,
+        Incompleto,
+    }
+    /// <summary>
+    /// Enumerado de Pais
+    /// </summary>
+    public enum EPais
+    {
+        Argentina,
+        Chile,
+        Venezuela,
+        Colombia,
+        Mexico,
+    }
 
     public class Persona
     {
@@ -12,6 +37,10 @@ namespace Entidades
         private string apellido;
         private string dni;
         private int edad;
+        private EGenero genero;
+        private int salario;
+        private ESecundario estudioSecundario;
+        private EPais paisNacido;
 
         /// <summary>
         /// Propiedad de lectura y escritura de Nombre
@@ -21,6 +50,7 @@ namespace Entidades
             get { return this.nombre; }
             set { this.nombre = value; }
         }
+
 
         /// <summary>
         /// Propiedad de lectura y escritura de Apellido
@@ -46,19 +76,62 @@ namespace Entidades
             get { return this.edad; }
             set { this.edad = value; }
         }
+        /// <summary>
+        /// Propiedad de lectura y escritura de Genero
+        /// </summary>
+        public EGenero Genero
+        {
+            get { return genero; }
+            set { genero = value; }
+        }
+        /// <summary>
+        /// Propiedad de lectura y escritura de Salario
+        /// </summary>
+        public int Salario
+        {
+            get { return salario; }
+            set { salario = value; }
+        }
+        /// <summary>
+        /// Propiedad de lectura y escritura de EstudioSecundario
+        /// </summary>
+        public ESecundario EstudioSecundario
+        {
+            get { return estudioSecundario; }
+            set { estudioSecundario = value; }
+        }
 
+        /// <summary>
+        /// Propiedad de lectura y escritura de PaisNacido
+        /// </summary>
+        public EPais PaisNacido
+        {
+            get { return paisNacido; }
+            set { paisNacido = value; }
+        }
+        /// <summary>
+        /// constructor sin parametro
+        /// </summary>
         public Persona()
         {
         }
 
-        public Persona(string nombre, string apellido, string dni, int edad)
+        
+        public Persona(string nombre, string apellido, string dni, int edad, EGenero genero, int salario, ESecundario secundarioCompleto, EPais paisNacido)
         {
             Nombre = nombre;
             Apellido = apellido;
             Dni = dni;
             Edad = edad;
+            Genero = genero;
+            Salario = salario;
+            EstudioSecundario = secundarioCompleto;
+            PaisNacido = paisNacido;
         }
-
+        /// <summary>
+        /// sobrescritura del metodo GetHashCode
+        /// </summary>
+        /// <returns>Retorna el numero de dni</returns>
         public override int GetHashCode()
         {
             return int.Parse(dni);
@@ -108,11 +181,17 @@ namespace Entidades
         {
             StringBuilder stringBuilder = new StringBuilder();
 
+            
+
             stringBuilder.AppendLine($"Nombre: {Nombre}");
             stringBuilder.AppendLine($"Apellido: {Apellido}");
             stringBuilder.AppendLine($"DNI: {Dni}");
             stringBuilder.AppendLine($"Edad: {Edad}");
-
+            stringBuilder.AppendLine($"Genero: {Genero}");
+            stringBuilder.AppendLine($"Secundario: {EstudioSecundario}");
+            stringBuilder.AppendLine($"Salario: ${Salario}");
+            stringBuilder.AppendLine($"Nacionalidad: {PaisNacido}");
+            
             return stringBuilder.ToString();
         }
 
