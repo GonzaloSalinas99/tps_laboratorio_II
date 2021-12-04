@@ -30,7 +30,6 @@ namespace Formularios
         private void InitializeComponent()
         {
             this.dtgInfoPersonas = new System.Windows.Forms.DataGridView();
-            this.btnAgregarADB = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgInfoPersonas)).BeginInit();
             this.SuspendLayout();
@@ -44,19 +43,9 @@ namespace Formularios
             this.dtgInfoPersonas.Size = new System.Drawing.Size(637, 190);
             this.dtgInfoPersonas.TabIndex = 0;
             // 
-            // btnAgregarADB
-            // 
-            this.btnAgregarADB.Location = new System.Drawing.Point(488, 238);
-            this.btnAgregarADB.Name = "btnAgregarADB";
-            this.btnAgregarADB.Size = new System.Drawing.Size(178, 23);
-            this.btnAgregarADB.TabIndex = 1;
-            this.btnAgregarADB.Text = "Agregar a la Base de Datos";
-            this.btnAgregarADB.UseVisualStyleBackColor = true;
-            this.btnAgregarADB.Click += new System.EventHandler(this.btnAgregarADB_Click);
-            // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(407, 238);
+            this.btnVolver.Location = new System.Drawing.Point(29, 238);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 3;
@@ -72,7 +61,6 @@ namespace Formularios
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(696, 293);
             this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.btnAgregarADB);
             this.Controls.Add(this.dtgInfoPersonas);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -88,7 +76,6 @@ namespace Formularios
         #endregion
 
         private System.Windows.Forms.DataGridView dtgInfoPersonas;
-        private System.Windows.Forms.Button btnAgregarADB;
         private System.Windows.Forms.Button btnVolver;
     }
 }

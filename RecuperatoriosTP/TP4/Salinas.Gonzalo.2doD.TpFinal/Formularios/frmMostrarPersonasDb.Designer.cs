@@ -46,17 +46,17 @@ namespace Formularios
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(597, 370);
+            this.btnEliminar.Location = new System.Drawing.Point(519, 370);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(119, 23);
             this.btnEliminar.TabIndex = 1;
-            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Text = "Eliminar Persona";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(516, 370);
+            this.btnVolver.Location = new System.Drawing.Point(438, 370);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 2;

@@ -11,6 +11,7 @@
           "Archivos": "1.0.0",
           "Controlador": "1.0.0",
           "Entidades": "1.0.0",
+          "Estadisticas": "1.0.0",
           "Excepciones": "1.0.0",
           "Extension": "1.0.0",
           "System.Data.SqlClient": "4.8.3"
@@ -122,6 +123,14 @@
           "Entidades.dll": {}
         }
       },
+      "Estadisticas/1.0.0": {
+        "dependencies": {
+          "Controlador": "1.0.0"
+        },
+        "runtime": {
+          "Estadisticas.dll": {}
+        }
+      },
       "Excepciones/1.0.0": {
         "dependencies": {
           "System.Data.SqlClient": "4.8.3"
@@ -220,6 +229,11 @@
       "sha512": ""
     },
     "Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Estadisticas/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

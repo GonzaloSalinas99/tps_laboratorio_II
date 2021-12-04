@@ -32,25 +32,10 @@ namespace Controlador
         /// <param name="listaPersonas">lista a ser iterada</param>
         private void MoverPersonas(List<Persona> listaPersonas)
         {
-            Alumno alumnoAux;
-            Profesor profesorAux;
             for (int i = 0; i < listaPersonas.Count; i++)
             {
-                if (listaPersonas[i] is Alumno)
-                {
-                    alumnoAux = (Alumno)listaPersonas[i];
-                    LogDB.InsertarInfoEnDB(alumnoAux);
-                    Thread.Sleep(1500);
-                }
-                else
-                {
-                    if (listaPersonas[i] is Profesor)
-                    {
-                        profesorAux = (Profesor)listaPersonas[i];
-                        LogDB.InsertarInfoEnDB(profesorAux);
-                        Thread.Sleep(1500);
-                    }
-                }
+                LogDB.InsertarInfoEnDB(listaPersonas[i]);
+                Thread.Sleep(1500);
 
                 if (AgregarPersonaADB is not null)
                 {

@@ -10,11 +10,14 @@ namespace Logueo
     public static class LogDB
     {
         private static SqlConnection conexion;
+        private static SqlCommand comando;
 
         static LogDB()
         {
             conexion = new SqlConnection("Server=DESKTOP-2HKT4SF\\SQLEXPRESS;Database=TP4;Trusted_Connection=True;MultipleActiveResultSets=true;");
-
+            comando = new SqlCommand();
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.Connection = conexion;
         }
         /// <summary>
         /// Inserta la informacion de la persona a la base de datos
@@ -24,37 +27,19 @@ namespace Logueo
         {
             try
             {
+                comando.Parameters.Clear();
                 conexion.Open();
-                SqlCommand sqlCommand;
 
-                if (persona is Alumno)
-                {
-                    Alumno alumnoAux = (Alumno)persona;
-                    sqlCommand = new SqlCommand("INSERT INTO dbo.Alumnoss (nombre,apellido,documento,edad,legajo,cuatrimestreCursando,FechaIngreso) VALUES (@Nombre,@Apellido,@Documento,@Edad,@Legajo,@CuatrimestreCursando,@FechaIngreso)", conexion);
-                    sqlCommand.Parameters.AddWithValue("@Nombre", alumnoAux.Nombre);
-                    sqlCommand.Parameters.AddWithValue("@Apellido", alumnoAux.Apellido);
-                    sqlCommand.Parameters.AddWithValue("@Documento", alumnoAux.Dni);
-                    sqlCommand.Parameters.AddWithValue("@Edad", alumnoAux.Edad);
-                    sqlCommand.Parameters.AddWithValue("@Legajo", alumnoAux.Legajo);
-                    sqlCommand.Parameters.AddWithValue("@CuatrimestreCursando", alumnoAux.CuatrimestreActual);
-                    sqlCommand.Parameters.AddWithValue("@FechaIngreso", alumnoAux.FechaIngreso);
-                    sqlCommand.ExecuteNonQuery();
-                }
-                else
-                {
-                    if (persona is Profesor)
-                    {
-                        Profesor profesorAux = (Profesor)persona;
-                        sqlCommand = new SqlCommand("INSERT INTO dbo.Profesores (nombre,apellido,documento,edad,salario,FechaIngreso) VALUES (@Nombre,@Apellido,@Documento,@Edad,@Salario,@FechaIngreso)", conexion);
-                        sqlCommand.Parameters.AddWithValue("@Nombre", profesorAux.Nombre);
-                        sqlCommand.Parameters.AddWithValue("@Apellido", profesorAux.Apellido);
-                        sqlCommand.Parameters.AddWithValue("@Documento", profesorAux.Dni);
-                        sqlCommand.Parameters.AddWithValue("@Edad", profesorAux.Edad);
-                        sqlCommand.Parameters.AddWithValue("@Salario", profesorAux.Salario);
-                        sqlCommand.Parameters.AddWithValue("@FechaIngreso", profesorAux.FechaIngreso);
-                        sqlCommand.ExecuteNonQuery();
-                    }
-                }
+                comando.CommandText = "INSERT INTO dbo.Personas (nombre,apellido,dni,edad,genero,salario,estudioSecundario,pais) VALUES (@Nombre,@Apellido,@Documento,@Edad,@Genero,@Salario,@EstudioSecundario,@Pais)";
+                comando.Parameters.AddWithValue("@Nombre", persona.Nombre);
+                comando.Parameters.AddWithValue("@Apellido", persona.Apellido);
+                comando.Parameters.AddWithValue("@Documento", persona.Dni);
+                comando.Parameters.AddWithValue("@Edad", persona.Edad);
+                comando.Parameters.AddWithValue("@Genero", persona.Genero);
+                comando.Parameters.AddWithValue("@Salario", persona.Salario);
+                comando.Parameters.AddWithValue("@EstudioSecundario", persona.EstudioSecundario);
+                comando.Parameters.AddWithValue("@Pais", persona.PaisNacido);
+                comando.ExecuteNonQuery();
 
             }
             catch (Excepciones.Excepciones ex)
@@ -71,27 +56,35 @@ namespace Logueo
         /// Lee los datos de los alumnos en la base de datos
         /// </summary>
         /// <returns></returns>
-        public static Procesador<Alumno> LeerAlumnos()
+        public static Procesador<Persona> LeerPersona()
         {
             conexion.Open();
-            SqlCommand sqlCommandAlumnos;
-            Procesador<Alumno> listaPersonasAux = new Procesador<Alumno>();
-
+            Procesador<Persona> listaPersonasAux = new Procesador<Persona>();
             try
             {
-                sqlCommandAlumnos = new SqlCommand();
-                sqlCommandAlumnos.Connection = conexion;
-                sqlCommandAlumnos.CommandText = "SELECT * FROM Alumnoss";
-                SqlDataReader sqlDataReaderAlumnos = sqlCommandAlumnos.ExecuteReader();
 
-                if (sqlDataReaderAlumnos.HasRows)
+                comando.CommandText = "SELECT * FROM Personas";
+                SqlDataReader sqlReader = comando.ExecuteReader();
+
+                if (sqlReader.HasRows)
                 {
-                    while (sqlDataReaderAlumnos.Read())
+                    while (sqlReader.Read())
                     {
-                        listaPersonasAux.Personas.Add(new Alumno(sqlDataReaderAlumnos["nombre"].ToString(), sqlDataReaderAlumnos["apellido"].ToString(), sqlDataReaderAlumnos["documento"].ToString(),
-                            (int)sqlDataReaderAlumnos["edad"], sqlDataReaderAlumnos["legajo"].ToString(), (int)sqlDataReaderAlumnos["cuatrimestreCursando"],
-                            Convert.ToDateTime(sqlDataReaderAlumnos["fechaIngreso"])));
 
+                        EGenero genero = EGenero.Masculino;
+                        if (sqlReader["genero"].ToString() == "1")
+                        {
+                            genero = EGenero.Femenino;
+                        }
+                        ESecundario secundario = ESecundario.Incompleto;
+                        if (sqlReader["estudioSecundario"].ToString() == "0")
+                        {
+                            secundario = ESecundario.Completo;
+                        }
+
+                        listaPersonasAux.Personas.Add(new Persona(sqlReader["nombre"].ToString(), sqlReader["apellido"].ToString(), sqlReader["dni"].ToString(),
+                            (int)sqlReader["edad"], genero, (int)sqlReader["salario"],
+                            secundario, VerificarPais(sqlReader["pais"].ToString())));
 
                     }
                 }
@@ -109,44 +102,45 @@ namespace Logueo
             return listaPersonasAux;
         }
         /// <summary>
-        /// Lee los datos de los profesores en la base de datos
+        /// Verifica el pais recibido en string
         /// </summary>
-        /// <returns></returns>
-        public static Procesador<Profesor> LeerProfesores()
+        /// <param name="pais">pais a verificar</param>
+        /// <returns>el nombre del pais en tipo Enum</returns>
+        private static EPais VerificarPais(string pais)
         {
-            conexion.Open();
-            SqlCommand sqlCommandProfesores;
-            Procesador<Profesor> listaPersonasAux = new Procesador<Profesor>();
-
-            try
+            EPais aux;
+            if (pais == "0")
             {
-
-                sqlCommandProfesores = new SqlCommand();
-                sqlCommandProfesores.Connection = conexion;
-                sqlCommandProfesores.CommandText = "SELECT * FROM Profesores";
-                SqlDataReader sqlDataReaderProfesores = sqlCommandProfesores.ExecuteReader();
-                
-                if (sqlDataReaderProfesores.HasRows)
+                aux = EPais.Argentina;
+            }
+            else
+            {
+                if (pais == "1")
                 {
-                    while (sqlDataReaderProfesores.Read())
+                    aux = EPais.Chile;
+                }
+                else
+                {
+                    if (pais == "2")
                     {
-                        listaPersonasAux.Personas.Add(new Profesor(sqlDataReaderProfesores["nombre"].ToString(), sqlDataReaderProfesores["apellido"].ToString(), sqlDataReaderProfesores["documento"].ToString(),
-                            (int)sqlDataReaderProfesores["edad"], Convert.ToSingle(sqlDataReaderProfesores["salario"]), Convert.ToDateTime(sqlDataReaderProfesores["fechaIngreso"])));
+                        aux = EPais.Venezuela;
+                    }
+                    else
+                    {
+                        if (pais == "3")
+                        {
+                            aux = EPais.Colombia;
+                        }
+                        else
+                        {
+                            aux = EPais.Mexico;
+                        }
                     }
                 }
             }
-            catch (Excepciones.Excepciones ex)
-            {
-
-                throw new Excepciones.Excepciones(ex.Message);
-            }
-            finally
-            {
-                conexion.Close();
-            }
-
-            return listaPersonasAux;
+            return aux;
         }
+       
         /// <summary>
         /// Elimina a la persona pasada por parametro
         /// </summary>
@@ -156,30 +150,14 @@ namespace Logueo
 
             try
             {
-                SqlCommand sqlCommand = new SqlCommand();
-                sqlCommand.Connection = conexion;
-                sqlCommand.CommandType = System.Data.CommandType.Text;
+                comando.Parameters.Clear();
                 conexion.Open();
-
-                if (persona is Alumno)
-                {
-                    sqlCommand.CommandText = $"DELETE FROM Alumnoss WHERE documento = @documento";
-
-                }
-                else
-                {
-                    if (persona is Profesor)
-                    {
-                        sqlCommand.CommandText = $"DELETE FROM Profesores WHERE documento = @documento";
-                    }
-                }
-                sqlCommand.Parameters.AddWithValue("@documento", persona.Dni);
-                sqlCommand.ExecuteNonQuery();
-
+                comando.CommandText = $"DELETE FROM Personas WHERE dni = @documento";
+                comando.Parameters.AddWithValue("@documento", persona.Dni);
+                comando.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
-
                 throw new Excepciones.Excepciones(ex.Message);
             }
             finally

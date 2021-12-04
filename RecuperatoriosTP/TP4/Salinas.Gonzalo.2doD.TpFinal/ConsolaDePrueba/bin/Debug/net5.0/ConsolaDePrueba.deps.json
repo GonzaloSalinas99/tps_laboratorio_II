@@ -105,6 +105,7 @@
         "dependencies": {
           "Entidades": "1.0.0",
           "Excepciones": "1.0.0",
+          "Extension": "1.0.0",
           "System.Data.SqlClient": "4.8.3"
         },
         "runtime": {
@@ -125,6 +126,14 @@
         },
         "runtime": {
           "Excepciones.dll": {}
+        }
+      },
+      "Extension/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "runtime": {
+          "Extension.dll": {}
         }
       }
     }
@@ -214,6 +223,11 @@
       "sha512": ""
     },
     "Excepciones/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Extension/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

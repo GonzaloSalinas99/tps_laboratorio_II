@@ -45,5 +45,23 @@ namespace Controlador
                 streamWriter.Write(json);
             }
         }
+        /// <summary>
+        /// Lee un archivo en formato .json
+        /// </summary>
+        /// <param name="ruta">ruta del archivo a leer</param>
+        /// <returns>retorna el contenido</returns>
+        public T Leer(string ruta)
+        {
+            if (ValidarSiExisteElArchivo(ruta) && ValidarExtension(ruta))
+            {
+                using (StreamReader streamReader = new StreamReader(ruta))
+                {
+                    string json = streamReader.ReadToEnd();
+                    T contenido = JsonSerializer.Deserialize<T>(json);
+                    return contenido;
+                }
+            }
+            return null;
+        }
     }
 }

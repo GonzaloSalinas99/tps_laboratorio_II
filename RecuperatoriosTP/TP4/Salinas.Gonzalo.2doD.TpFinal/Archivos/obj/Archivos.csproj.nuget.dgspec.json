@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Archivos\\Archivos.csproj": {}
+    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Archivos\\Archivos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Archivos\\Archivos.csproj": {
+    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Archivos\\Archivos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Archivos\\Archivos.csproj",
+        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Archivos\\Archivos.csproj",
         "projectName": "Archivos",
-        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Archivos\\Archivos.csproj",
+        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Archivos\\Archivos.csproj",
         "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Archivos\\obj\\",
+        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Archivos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\Excepciones.csproj": {
-                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\Excepciones.csproj"
+              "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\Excepciones.csproj": {
+                "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\Excepciones.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\Excepciones.csproj": {
+    "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\Excepciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\Excepciones.csproj",
+        "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\Excepciones.csproj",
         "projectName": "Excepciones",
-        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\Excepciones.csproj",
+        "projectPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\Excepciones.csproj",
         "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\obj\\",
+        "outputPath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Excepciones\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

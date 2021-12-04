@@ -29,9 +29,9 @@ namespace Formularios
         {
             try
             {
-                if (String.IsNullOrEmpty(txtNombre.Text) && String.IsNullOrEmpty(txtDocumento.Text) &&
-                    String.IsNullOrEmpty(txtEdad.Text) && String.IsNullOrEmpty(txtSalario.Text) && cmbPais is not null &&
-                    String.IsNullOrEmpty(txtApellido.Text) && cmbEstudioSecundario.SelectedItem is not null && cmbGenero.SelectedItem is not null)
+                if (txtNombre.Text != "" && txtDocumento.Text != "" &&
+                    txtEdad.Text != "" && txtSalario.Text != "" && cmbPais is not null &&
+                    txtApellido.Text != "" && cmbEstudioSecundario.SelectedItem is not null && cmbGenero.SelectedItem is not null)
                 {
                     EGenero genero;
                     ESecundario secundario;

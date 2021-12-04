@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eTPnJoXI0Z1mZr/AkYX1m1BrM0d+gRu7lYrvpc9SRdPEnLHGxO4pmRn8qfwSGW/IccHXvHHhputIbH9hDWl7KQ==",
+  "dgSpecHash": "D8XrA1jpr+6wsYqiBZ6D82pbOmlhteUEhgObhKI8GCdsOVjTrb4ASGms5ZZKz69Jz630P++Ow4PcMDPfLVifAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\TesteoMetodos\\TesteoMetodos.csproj",
+  "projectFilePath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\TesteoMetodos\\TesteoMetodos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gonzalo\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

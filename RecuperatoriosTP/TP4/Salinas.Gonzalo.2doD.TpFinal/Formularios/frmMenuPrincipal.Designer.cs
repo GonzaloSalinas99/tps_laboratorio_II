@@ -30,102 +30,41 @@ namespace Formularios
         private void InitializeComponent()
         {
             this.btnGuardarPersonas = new System.Windows.Forms.Button();
-            this.btnMostrarAlumnos = new System.Windows.Forms.Button();
-            this.btnMostrarProfesores = new System.Windows.Forms.Button();
-            this.btnAgregarAlumno = new System.Windows.Forms.Button();
-            this.btnAgregarProfesor = new System.Windows.Forms.Button();
-            this.btnListarAlumnosDB = new System.Windows.Forms.Button();
-            this.btnListarProfesoresDB = new System.Windows.Forms.Button();
             this.lblHora = new System.Windows.Forms.Label();
             this.btnGuardarPersonasDB = new System.Windows.Forms.Button();
             this.btnSortearPremio = new System.Windows.Forms.Button();
             this.lblInformacionSorteo = new System.Windows.Forms.Label();
             this.btnCargarDatos = new System.Windows.Forms.Button();
+            this.btnAgregarPersona = new System.Windows.Forms.Button();
+            this.btnEstadisticas = new System.Windows.Forms.Button();
+            this.btnMostrarPersonasCargadas = new System.Windows.Forms.Button();
+            this.btnListarPersonasDB = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGuardarPersonas
             // 
-            this.btnGuardarPersonas.Location = new System.Drawing.Point(145, 147);
+            this.btnGuardarPersonas.Location = new System.Drawing.Point(107, 263);
             this.btnGuardarPersonas.Name = "btnGuardarPersonas";
-            this.btnGuardarPersonas.Size = new System.Drawing.Size(136, 23);
+            this.btnGuardarPersonas.Size = new System.Drawing.Size(178, 39);
             this.btnGuardarPersonas.TabIndex = 0;
-            this.btnGuardarPersonas.Text = "Guardar En Archivos";
+            this.btnGuardarPersonas.Text = "Guardar Datos En Archivos";
             this.btnGuardarPersonas.UseVisualStyleBackColor = true;
             this.btnGuardarPersonas.Click += new System.EventHandler(this.btnGuardarPersonas_Click);
-            // 
-            // btnMostrarAlumnos
-            // 
-            this.btnMostrarAlumnos.Location = new System.Drawing.Point(21, 176);
-            this.btnMostrarAlumnos.Name = "btnMostrarAlumnos";
-            this.btnMostrarAlumnos.Size = new System.Drawing.Size(178, 23);
-            this.btnMostrarAlumnos.TabIndex = 2;
-            this.btnMostrarAlumnos.Text = "Mostrar Alumnos Cargados";
-            this.btnMostrarAlumnos.UseVisualStyleBackColor = true;
-            this.btnMostrarAlumnos.Click += new System.EventHandler(this.btnMostrarAlumnos_Click);
-            // 
-            // btnMostrarProfesores
-            // 
-            this.btnMostrarProfesores.Location = new System.Drawing.Point(218, 176);
-            this.btnMostrarProfesores.Name = "btnMostrarProfesores";
-            this.btnMostrarProfesores.Size = new System.Drawing.Size(178, 23);
-            this.btnMostrarProfesores.TabIndex = 3;
-            this.btnMostrarProfesores.Text = "Mostrar Profesores Cargados";
-            this.btnMostrarProfesores.UseVisualStyleBackColor = true;
-            this.btnMostrarProfesores.Click += new System.EventHandler(this.btnMostrarProfesores_Click);
-            // 
-            // btnAgregarAlumno
-            // 
-            this.btnAgregarAlumno.Location = new System.Drawing.Point(35, 118);
-            this.btnAgregarAlumno.Name = "btnAgregarAlumno";
-            this.btnAgregarAlumno.Size = new System.Drawing.Size(136, 23);
-            this.btnAgregarAlumno.TabIndex = 4;
-            this.btnAgregarAlumno.Text = "Agregar Alumno";
-            this.btnAgregarAlumno.UseVisualStyleBackColor = true;
-            this.btnAgregarAlumno.Click += new System.EventHandler(this.btnAgregarAlumno_Click);
-            // 
-            // btnAgregarProfesor
-            // 
-            this.btnAgregarProfesor.Location = new System.Drawing.Point(234, 118);
-            this.btnAgregarProfesor.Name = "btnAgregarProfesor";
-            this.btnAgregarProfesor.Size = new System.Drawing.Size(136, 23);
-            this.btnAgregarProfesor.TabIndex = 5;
-            this.btnAgregarProfesor.Text = "Agregar Profesor";
-            this.btnAgregarProfesor.UseVisualStyleBackColor = true;
-            this.btnAgregarProfesor.Click += new System.EventHandler(this.btnAgregarProfesor_Click);
-            // 
-            // btnListarAlumnosDB
-            // 
-            this.btnListarAlumnosDB.Location = new System.Drawing.Point(218, 410);
-            this.btnListarAlumnosDB.Name = "btnListarAlumnosDB";
-            this.btnListarAlumnosDB.Size = new System.Drawing.Size(177, 23);
-            this.btnListarAlumnosDB.TabIndex = 6;
-            this.btnListarAlumnosDB.Text = "Listar Alumnos Base de Datos";
-            this.btnListarAlumnosDB.UseVisualStyleBackColor = true;
-            this.btnListarAlumnosDB.Click += new System.EventHandler(this.btnListarDB_Click);
-            // 
-            // btnListarProfesoresDB
-            // 
-            this.btnListarProfesoresDB.Location = new System.Drawing.Point(12, 410);
-            this.btnListarProfesoresDB.Name = "btnListarProfesoresDB";
-            this.btnListarProfesoresDB.Size = new System.Drawing.Size(177, 23);
-            this.btnListarProfesoresDB.TabIndex = 7;
-            this.btnListarProfesoresDB.Text = "Listar Profesores Base de Datos";
-            this.btnListarProfesoresDB.UseVisualStyleBackColor = true;
-            this.btnListarProfesoresDB.Click += new System.EventHandler(this.btnListarProfesoresDB_Click);
             // 
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Location = new System.Drawing.Point(70, 359);
+            this.lblHora.Location = new System.Drawing.Point(106, 422);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(0, 15);
             this.lblHora.TabIndex = 8;
             // 
             // btnGuardarPersonasDB
             // 
-            this.btnGuardarPersonasDB.Location = new System.Drawing.Point(122, 381);
+            this.btnGuardarPersonasDB.Location = new System.Drawing.Point(213, 469);
             this.btnGuardarPersonasDB.Name = "btnGuardarPersonasDB";
-            this.btnGuardarPersonasDB.Size = new System.Drawing.Size(178, 23);
+            this.btnGuardarPersonasDB.Size = new System.Drawing.Size(178, 39);
             this.btnGuardarPersonasDB.TabIndex = 11;
             this.btnGuardarPersonasDB.Text = "Guardar Personas En DB";
             this.btnGuardarPersonasDB.UseVisualStyleBackColor = true;
@@ -133,7 +72,7 @@ namespace Formularios
             // 
             // btnSortearPremio
             // 
-            this.btnSortearPremio.Location = new System.Drawing.Point(122, 251);
+            this.btnSortearPremio.Location = new System.Drawing.Point(106, 328);
             this.btnSortearPremio.Name = "btnSortearPremio";
             this.btnSortearPremio.Size = new System.Drawing.Size(178, 52);
             this.btnSortearPremio.TabIndex = 12;
@@ -144,7 +83,7 @@ namespace Formularios
             // lblInformacionSorteo
             // 
             this.lblInformacionSorteo.AutoSize = true;
-            this.lblInformacionSorteo.Location = new System.Drawing.Point(131, 306);
+            this.lblInformacionSorteo.Location = new System.Drawing.Point(115, 383);
             this.lblInformacionSorteo.Name = "lblInformacionSorteo";
             this.lblInformacionSorteo.Size = new System.Drawing.Size(160, 15);
             this.lblInformacionSorteo.TabIndex = 13;
@@ -152,13 +91,63 @@ namespace Formularios
             // 
             // btnCargarDatos
             // 
-            this.btnCargarDatos.Location = new System.Drawing.Point(157, 67);
+            this.btnCargarDatos.Location = new System.Drawing.Point(12, 24);
             this.btnCargarDatos.Name = "btnCargarDatos";
-            this.btnCargarDatos.Size = new System.Drawing.Size(98, 23);
+            this.btnCargarDatos.Size = new System.Drawing.Size(177, 39);
             this.btnCargarDatos.TabIndex = 14;
-            this.btnCargarDatos.Text = "Cargar Datos";
+            this.btnCargarDatos.Text = "Cargar Datos De Archivos";
             this.btnCargarDatos.UseVisualStyleBackColor = true;
             this.btnCargarDatos.Click += new System.EventHandler(this.btnCargarDatos_Click);
+            // 
+            // btnAgregarPersona
+            // 
+            this.btnAgregarPersona.Location = new System.Drawing.Point(107, 82);
+            this.btnAgregarPersona.Name = "btnAgregarPersona";
+            this.btnAgregarPersona.Size = new System.Drawing.Size(177, 39);
+            this.btnAgregarPersona.TabIndex = 15;
+            this.btnAgregarPersona.Text = "Agregar Persona";
+            this.btnAgregarPersona.UseVisualStyleBackColor = true;
+            this.btnAgregarPersona.Click += new System.EventHandler(this.btnAgregarPersona_Click);
+            // 
+            // btnEstadisticas
+            // 
+            this.btnEstadisticas.Location = new System.Drawing.Point(106, 205);
+            this.btnEstadisticas.Name = "btnEstadisticas";
+            this.btnEstadisticas.Size = new System.Drawing.Size(178, 39);
+            this.btnEstadisticas.TabIndex = 16;
+            this.btnEstadisticas.Text = "Estadisticas";
+            this.btnEstadisticas.UseVisualStyleBackColor = true;
+            this.btnEstadisticas.Click += new System.EventHandler(this.btnEstadisticas_Click);
+            // 
+            // btnMostrarPersonasCargadas
+            // 
+            this.btnMostrarPersonasCargadas.Location = new System.Drawing.Point(107, 143);
+            this.btnMostrarPersonasCargadas.Name = "btnMostrarPersonasCargadas";
+            this.btnMostrarPersonasCargadas.Size = new System.Drawing.Size(177, 39);
+            this.btnMostrarPersonasCargadas.TabIndex = 17;
+            this.btnMostrarPersonasCargadas.Text = "Mostrar Personas En Sistema";
+            this.btnMostrarPersonasCargadas.UseVisualStyleBackColor = true;
+            this.btnMostrarPersonasCargadas.Click += new System.EventHandler(this.btnMostrarPersonasCargadas_Click);
+            // 
+            // btnListarPersonasDB
+            // 
+            this.btnListarPersonasDB.Location = new System.Drawing.Point(12, 469);
+            this.btnListarPersonasDB.Name = "btnListarPersonasDB";
+            this.btnListarPersonasDB.Size = new System.Drawing.Size(177, 39);
+            this.btnListarPersonasDB.TabIndex = 18;
+            this.btnListarPersonasDB.Text = "Listar Personas Base de Datos";
+            this.btnListarPersonasDB.UseVisualStyleBackColor = true;
+            this.btnListarPersonasDB.Click += new System.EventHandler(this.btnListarPersonasDB_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(204, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(177, 39);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Cargar Datos De Base De Datos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmMenuPrincipal
             // 
@@ -166,24 +155,24 @@ namespace Formularios
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(421, 445);
+            this.ClientSize = new System.Drawing.Size(421, 520);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnListarPersonasDB);
+            this.Controls.Add(this.btnMostrarPersonasCargadas);
+            this.Controls.Add(this.btnEstadisticas);
+            this.Controls.Add(this.btnAgregarPersona);
             this.Controls.Add(this.btnCargarDatos);
             this.Controls.Add(this.lblInformacionSorteo);
             this.Controls.Add(this.btnSortearPremio);
             this.Controls.Add(this.btnGuardarPersonasDB);
             this.Controls.Add(this.lblHora);
-            this.Controls.Add(this.btnListarProfesoresDB);
-            this.Controls.Add(this.btnListarAlumnosDB);
-            this.Controls.Add(this.btnAgregarProfesor);
-            this.Controls.Add(this.btnAgregarAlumno);
-            this.Controls.Add(this.btnMostrarProfesores);
-            this.Controls.Add(this.btnMostrarAlumnos);
             this.Controls.Add(this.btnGuardarPersonas);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMenuPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.frmMenuPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -193,16 +182,15 @@ namespace Formularios
         #endregion
 
         private System.Windows.Forms.Button btnGuardarPersonas;
-        private System.Windows.Forms.Button btnMostrarAlumnos;
-        private System.Windows.Forms.Button btnMostrarProfesores;
-        private System.Windows.Forms.Button btnAgregarAlumno;
-        private System.Windows.Forms.Button btnAgregarProfesor;
-        private System.Windows.Forms.Button btnListarAlumnosDB;
-        private System.Windows.Forms.Button btnListarProfesoresDB;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Button btnGuardarPersonasDB;
         private System.Windows.Forms.Button btnSortearPremio;
         private System.Windows.Forms.Label lblInformacionSorteo;
         private System.Windows.Forms.Button btnCargarDatos;
+        private System.Windows.Forms.Button btnAgregarPersona;
+        private System.Windows.Forms.Button btnEstadisticas;
+        private System.Windows.Forms.Button btnMostrarPersonasCargadas;
+        private System.Windows.Forms.Button btnListarPersonasDB;
+        private System.Windows.Forms.Button button1;
     }
 }

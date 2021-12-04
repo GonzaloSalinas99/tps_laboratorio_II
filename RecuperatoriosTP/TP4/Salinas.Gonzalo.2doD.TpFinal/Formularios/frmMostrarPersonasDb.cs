@@ -15,16 +15,11 @@ namespace Formularios
     public partial class frmMostrarPersonasDb : Form
     {
         
-        Procesador<Persona> listaPersonas;
-        Persona persona;
 
-        public frmMostrarPersonasDb(Procesador<Persona> personas, Persona personaAux)
+        public frmMostrarPersonasDb()
         {
             InitializeComponent();
-            listaPersonas = personas;
-            persona = personaAux;
 
-        
         }
         /// <summary>
         /// Elimina una persona seleccionada en el listbox
@@ -33,28 +28,71 @@ namespace Formularios
         /// <param name="e"></param>
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if(persona is Alumno)
-            {
-                Alumno alumnoAux = new Alumno(dtgvPersonas.SelectedRows[0].Cells[3].Value.ToString(), dtgvPersonas.SelectedRows[0].Cells[4].Value.ToString(), dtgvPersonas.SelectedRows[0].Cells[5].Value.ToString(),
-                    Convert.ToInt32(dtgvPersonas.SelectedRows[0].Cells[6].Value), dtgvPersonas.SelectedRows[0].Cells[2].Value.ToString(),Convert.ToInt32(dtgvPersonas.SelectedRows[0].Cells[1].Value),
-                    Convert.ToDateTime( dtgvPersonas.SelectedRows[0].Cells[0].Value));
 
-                LogDB.Eliminar(alumnoAux);
+
+            EGenero genero = EGenero.Masculino;
+            if (dtgvPersonas.SelectedRows[0].Cells[4].Value.ToString() == "Femenino")
+            {
+                genero = EGenero.Femenino;
+            }
+            ESecundario secundario = ESecundario.Incompleto;
+            if (dtgvPersonas.SelectedRows[0].Cells[6].Value.ToString() == "Completo")
+            {
+                secundario = ESecundario.Completo;
+            }
+
+            Persona persona = new Persona(dtgvPersonas.SelectedRows[0].Cells[0].Value.ToString(),
+                                          dtgvPersonas.SelectedRows[0].Cells[1].Value.ToString(),
+                                          dtgvPersonas.SelectedRows[0].Cells[2].Value.ToString(),
+                                          Convert.ToInt32(dtgvPersonas.SelectedRows[0].Cells[3].Value),
+                                          genero, Convert.ToInt32(dtgvPersonas.SelectedRows[0].Cells[5].Value),
+                                          secundario, VerificarPais(dtgvPersonas.SelectedRows[0].Cells[7].Value.ToString()));
+            LogDB.Eliminar(persona);
                 Actualizar();
 
+        }
+
+        /// <summary>
+        /// Verifica el pais recibido en string
+        /// </summary>
+        /// <param name="pais">pais a verificar</param>
+        /// <returns>el nombre del pais en tipo Enum</returns>
+        private static EPais VerificarPais(string pais)
+        {
+            EPais aux;
+            if (pais == "Argentina")
+            {
+                aux = EPais.Argentina;
             }
             else
             {
-                if (persona is Profesor)
+                if (pais == "Chile")
                 {
-                    Profesor profesorAux = new Profesor(dtgvPersonas.SelectedRows[0].Cells[2].Value.ToString(), dtgvPersonas.SelectedRows[0].Cells[3].Value.ToString(), dtgvPersonas.SelectedRows[0].Cells[4].Value.ToString(),
-                    Convert.ToInt32(dtgvPersonas.SelectedRows[0].Cells[5].Value), Convert.ToSingle(dtgvPersonas.SelectedRows[0].Cells[0].Value), Convert.ToDateTime(dtgvPersonas.SelectedRows[0].Cells[1].Value));
-                    LogDB.Eliminar(profesorAux);
-                    Actualizar();
+                    aux = EPais.Chile;
                 }
-
+                else
+                {
+                    if (pais == "Venezuela")
+                    {
+                        aux = EPais.Venezuela;
+                    }
+                    else
+                    {
+                        if (pais == "Colombia")
+                        {
+                            aux = EPais.Colombia;
+                        }
+                        else
+                        {
+                            aux = EPais.Mexico;
+                        }
+                    }
+                }
             }
+            return aux;
         }
+
+
         /// <summary>
         /// Carga la lista actualizada
         /// </summary>
@@ -70,21 +108,8 @@ namespace Formularios
         /// </summary>
         private void Actualizar()
         {
-            
-            Procesador<Alumno> alumnos = LogDB.LeerAlumnos();
-            Procesador<Profesor> profesores = LogDB.LeerProfesores();
-
-            if (persona is Alumno)
-            {
-                dtgvPersonas.DataSource = alumnos.Personas;
-            }
-            else
-            {
-                if (persona is Profesor)
-                {
-                    dtgvPersonas.DataSource = profesores.Personas;
-                }
-            }
+            Procesador<Persona> personas = LogDB.LeerPersona();
+            dtgvPersonas.DataSource = personas.Personas;
         }
         /// <summary>
         /// Cierra el formulario

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8ki9J/N0RyqMepXx+SKIopKJnGqLGI+BQWRTIgLUh3PUBnlLViifmMXvh3AeZQkLaCLIt1ps/J68446JkSC7/w==",
+  "dgSpecHash": "HXhtUGRrX/5vsWlxDqPXNEGIEKGudMtWjnkIN9skNjDjYtvtwmjXEW40W0CqCICbOX1CHhvPcYLF3mCk322JUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Extension\\Extension.csproj",
+  "projectFilePath": "C:\\Users\\Gonzalo\\Desktop\\Repositorios\\tps_laboratorio_II\\RecuperatoriosTP\\TP4\\Salinas.Gonzalo.2doD.TpFinal\\Extension\\Extension.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gonzalo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

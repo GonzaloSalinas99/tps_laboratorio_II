@@ -38,6 +38,7 @@ namespace Formularios
             this.cmbOpcionEstudiosSecundarios = new System.Windows.Forms.ComboBox();
             this.btnCalcularCantidadPersonasEnPais = new System.Windows.Forms.Button();
             this.btnCalcularPromedioMinimoMaximoSalarios = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtbEstadisticas
@@ -126,12 +127,23 @@ namespace Formularios
             this.btnCalcularPromedioMinimoMaximoSalarios.UseVisualStyleBackColor = true;
             this.btnCalcularPromedioMinimoMaximoSalarios.Click += new System.EventHandler(this.btnCalcularPromedioMinimoMaximoSalarios_Click);
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Location = new System.Drawing.Point(26, 448);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 23);
+            this.btnVolver.TabIndex = 10;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // frmEstadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(493, 450);
+            this.ClientSize = new System.Drawing.Size(493, 485);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnCalcularPromedioMinimoMaximoSalarios);
             this.Controls.Add(this.btnCalcularCantidadPersonasEnPais);
             this.Controls.Add(this.cmbOpcionEstudiosSecundarios);
@@ -161,5 +173,6 @@ namespace Formularios
         private System.Windows.Forms.ComboBox cmbOpcionEstudiosSecundarios;
         private System.Windows.Forms.Button btnCalcularCantidadPersonasEnPais;
         private System.Windows.Forms.Button btnCalcularPromedioMinimoMaximoSalarios;
+        private System.Windows.Forms.Button btnVolver;
     }
 }
