@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Extension;
+using Logueo;
 
 namespace Formularios
 {
@@ -318,9 +319,17 @@ namespace Formularios
             frmMostrarPersonasDb.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCargarDatosDB_Click(object sender, EventArgs e)
         {
-
+            Procesador<Persona> listaAux = LogDB.LeerPersonas();
+            if(listaAux.Personas.Count>0)
+            {
+                listaPersonas = listaAux;
+            }
+            else
+            {
+                MessageBox.Show("No hay personas cargadas en el formulario");
+            }
         }
     }
 }

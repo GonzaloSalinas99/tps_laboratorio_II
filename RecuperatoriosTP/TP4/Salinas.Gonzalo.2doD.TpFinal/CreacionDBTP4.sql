@@ -1,13 +1,7 @@
 USE [master]
 GO
-/****** Object:  Database [TP4]    Script Date: 29/11/2021 0:17:40 ******/
-CREATE DATABASE [TP4]
- CONTAINMENT = NONE
- ON  PRIMARY 
-( NAME = N'TP4', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\TP4.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
- LOG ON 
-( NAME = N'TP4_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\TP4_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
- WITH CATALOG_COLLATION = DATABASE_DEFAULT
+
+TALOG_COLLATION = DATABASE_DEFAULT
 GO
 ALTER DATABASE [TP4] SET COMPATIBILITY_LEVEL = 150
 GO
@@ -80,33 +74,20 @@ ALTER DATABASE [TP4] SET QUERY_STORE = OFF
 GO
 USE [TP4]
 GO
-/****** Object:  Table [dbo].[Alumnoss]    Script Date: 29/11/2021 0:17:41 ******/
+/****** Object:  Table [dbo].[Personas]    Script Date: 04/12/2021 21:13:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE TABLE [dbo].[Alumnoss](
+CREATE TABLE [dbo].[Personas](
 	[nombre] [varchar](50) NOT NULL,
 	[apellido] [varchar](50) NOT NULL,
-	[documento] [varchar](50) NOT NULL,
+	[dni] [varchar](50) NOT NULL,
 	[edad] [int] NOT NULL,
-	[legajo] [varchar](50) NOT NULL,
-	[cuatrimestreCursando] [int] NOT NULL,
-	[fechaIngreso] [date] NOT NULL
-) ON [PRIMARY]
-GO
-/****** Object:  Table [dbo].[Profesores]    Script Date: 29/11/2021 0:17:41 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE TABLE [dbo].[Profesores](
-	[nombre] [varchar](50) NOT NULL,
-	[apellido] [varchar](50) NOT NULL,
-	[documento] [varchar](50) NOT NULL,
-	[edad] [int] NOT NULL,
-	[salario] [float] NOT NULL,
-	[fechaIngreso] [date] NOT NULL
+	[genero] [varchar](50) NOT NULL,
+	[salario] [int] NOT NULL,
+	[estudioSecundario] [varchar](50) NOT NULL,
+	[pais] [varchar](50) NOT NULL
 ) ON [PRIMARY]
 GO
 USE [master]

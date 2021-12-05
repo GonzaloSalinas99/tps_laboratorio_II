@@ -29,27 +29,33 @@ namespace Formularios
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
-
-            EGenero genero = EGenero.Masculino;
-            if (dtgvPersonas.SelectedRows[0].Cells[4].Value.ToString() == "Femenino")
+            if(dtgvPersonas.SelectedRows.Count >0)
             {
-                genero = EGenero.Femenino;
-            }
-            ESecundario secundario = ESecundario.Incompleto;
-            if (dtgvPersonas.SelectedRows[0].Cells[6].Value.ToString() == "Completo")
-            {
-                secundario = ESecundario.Completo;
-            }
+                EGenero genero = EGenero.Masculino;
+                if (dtgvPersonas.SelectedRows[0].Cells[4].Value.ToString() == "Femenino")
+                {
+                    genero = EGenero.Femenino;
+                }
+                ESecundario secundario = ESecundario.Incompleto;
+                if (dtgvPersonas.SelectedRows[0].Cells[6].Value.ToString() == "Completo")
+                {
+                    secundario = ESecundario.Completo;
+                }
 
-            Persona persona = new Persona(dtgvPersonas.SelectedRows[0].Cells[0].Value.ToString(),
-                                          dtgvPersonas.SelectedRows[0].Cells[1].Value.ToString(),
-                                          dtgvPersonas.SelectedRows[0].Cells[2].Value.ToString(),
-                                          Convert.ToInt32(dtgvPersonas.SelectedRows[0].Cells[3].Value),
-                                          genero, Convert.ToInt32(dtgvPersonas.SelectedRows[0].Cells[5].Value),
-                                          secundario, VerificarPais(dtgvPersonas.SelectedRows[0].Cells[7].Value.ToString()));
-            LogDB.Eliminar(persona);
+                Persona persona = new Persona(dtgvPersonas.SelectedRows[0].Cells[0].Value.ToString(),
+                                              dtgvPersonas.SelectedRows[0].Cells[1].Value.ToString(),
+                                              dtgvPersonas.SelectedRows[0].Cells[2].Value.ToString(),
+                                              Convert.ToInt32(dtgvPersonas.SelectedRows[0].Cells[3].Value),
+                                              genero, Convert.ToInt32(dtgvPersonas.SelectedRows[0].Cells[5].Value),
+                                              secundario, VerificarPais(dtgvPersonas.SelectedRows[0].Cells[7].Value.ToString()));
+                LogDB.Eliminar(persona);
                 Actualizar();
 
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar una fila", "Error");
+            }
         }
 
         /// <summary>
@@ -108,7 +114,7 @@ namespace Formularios
         /// </summary>
         private void Actualizar()
         {
-            Procesador<Persona> personas = LogDB.LeerPersona();
+            Procesador<Persona> personas = LogDB.LeerPersonas();
             dtgvPersonas.DataSource = personas.Personas;
         }
         /// <summary>

@@ -39,7 +39,7 @@ namespace Formularios
             this.btnEstadisticas = new System.Windows.Forms.Button();
             this.btnMostrarPersonasCargadas = new System.Windows.Forms.Button();
             this.btnListarPersonasDB = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCargarDatosDB = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGuardarPersonas
@@ -139,15 +139,15 @@ namespace Formularios
             this.btnListarPersonasDB.UseVisualStyleBackColor = true;
             this.btnListarPersonasDB.Click += new System.EventHandler(this.btnListarPersonasDB_Click);
             // 
-            // button1
+            // btnCargarDatosDB
             // 
-            this.button1.Location = new System.Drawing.Point(204, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 39);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Cargar Datos De Base De Datos";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCargarDatosDB.Location = new System.Drawing.Point(213, 24);
+            this.btnCargarDatosDB.Name = "btnCargarDatosDB";
+            this.btnCargarDatosDB.Size = new System.Drawing.Size(177, 39);
+            this.btnCargarDatosDB.TabIndex = 20;
+            this.btnCargarDatosDB.Text = "Cargar Datos De Base De Datos";
+            this.btnCargarDatosDB.UseVisualStyleBackColor = true;
+            this.btnCargarDatosDB.Click += new System.EventHandler(this.btnCargarDatosDB_Click);
             // 
             // frmMenuPrincipal
             // 
@@ -156,7 +156,7 @@ namespace Formularios
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(421, 520);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCargarDatosDB);
             this.Controls.Add(this.btnListarPersonasDB);
             this.Controls.Add(this.btnMostrarPersonasCargadas);
             this.Controls.Add(this.btnEstadisticas);
@@ -191,6 +191,6 @@ namespace Formularios
         private System.Windows.Forms.Button btnEstadisticas;
         private System.Windows.Forms.Button btnMostrarPersonasCargadas;
         private System.Windows.Forms.Button btnListarPersonasDB;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCargarDatosDB;
     }
 }

@@ -56,7 +56,7 @@ namespace Logueo
         /// Lee los datos de los alumnos en la base de datos
         /// </summary>
         /// <returns></returns>
-        public static Procesador<Persona> LeerPersona()
+        public static Procesador<Persona> LeerPersonas()
         {
             conexion.Open();
             Procesador<Persona> listaPersonasAux = new Procesador<Persona>();
