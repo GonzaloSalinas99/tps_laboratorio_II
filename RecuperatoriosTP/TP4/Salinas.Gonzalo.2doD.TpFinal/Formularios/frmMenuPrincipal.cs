@@ -239,7 +239,7 @@ namespace Formularios
 
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine($"-La Persona con Apellido: {personaAux.Apellido} ha sido seleccionado para el premio de un aumento de salario de 30%");
-                sb.AppendLine($"-El se le aumento ${aumento} a su sueldo.");
+                sb.AppendLine($"-Se le aumento ${aumento} a su sueldo.");
                 sb.AppendLine("-Felicitamos a todos los que participaron del sorteo");
 
                 MessageBox.Show(sb.ToString(), "SUPER SORTEO");

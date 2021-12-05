@@ -39,6 +39,8 @@ namespace Formularios
             this.btnCalcularCantidadPersonasEnPais = new System.Windows.Forms.Button();
             this.btnCalcularPromedioMinimoMaximoSalarios = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.lblTipoDeOrdenLista = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // rtbEstadisticas
@@ -93,7 +95,7 @@ namespace Formularios
             // 
             this.cmbOrdenLista.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOrdenLista.FormattingEnabled = true;
-            this.cmbOrdenLista.Location = new System.Drawing.Point(44, 392);
+            this.cmbOrdenLista.Location = new System.Drawing.Point(44, 410);
             this.cmbOrdenLista.Name = "cmbOrdenLista";
             this.cmbOrdenLista.Size = new System.Drawing.Size(132, 23);
             this.cmbOrdenLista.TabIndex = 6;
@@ -102,7 +104,7 @@ namespace Formularios
             // 
             this.cmbOpcionEstudiosSecundarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOpcionEstudiosSecundarios.FormattingEnabled = true;
-            this.cmbOpcionEstudiosSecundarios.Location = new System.Drawing.Point(182, 392);
+            this.cmbOpcionEstudiosSecundarios.Location = new System.Drawing.Point(182, 410);
             this.cmbOpcionEstudiosSecundarios.Name = "cmbOpcionEstudiosSecundarios";
             this.cmbOpcionEstudiosSecundarios.Size = new System.Drawing.Size(132, 23);
             this.cmbOpcionEstudiosSecundarios.TabIndex = 7;
@@ -129,7 +131,7 @@ namespace Formularios
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(25, 452);
+            this.btnVolver.Location = new System.Drawing.Point(44, 487);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 10;
@@ -137,12 +139,34 @@ namespace Formularios
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // lblTipoDeOrdenLista
+            // 
+            this.lblTipoDeOrdenLista.AutoSize = true;
+            this.lblTipoDeOrdenLista.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTipoDeOrdenLista.Location = new System.Drawing.Point(44, 392);
+            this.lblTipoDeOrdenLista.Name = "lblTipoDeOrdenLista";
+            this.lblTipoDeOrdenLista.Size = new System.Drawing.Size(115, 15);
+            this.lblTipoDeOrdenLista.TabIndex = 11;
+            this.lblTipoDeOrdenLista.Text = "Manera de Ordenar";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(182, 392);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 15);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Filtrar Nivel Secundario";
+            // 
             // frmEstadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(493, 487);
+            this.ClientSize = new System.Drawing.Size(493, 522);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTipoDeOrdenLista);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnCalcularPromedioMinimoMaximoSalarios);
             this.Controls.Add(this.btnCalcularCantidadPersonasEnPais);
@@ -159,6 +183,7 @@ namespace Formularios
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estadisticas";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -174,5 +199,7 @@ namespace Formularios
         private System.Windows.Forms.Button btnCalcularCantidadPersonasEnPais;
         private System.Windows.Forms.Button btnCalcularPromedioMinimoMaximoSalarios;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Label lblTipoDeOrdenLista;
+        private System.Windows.Forms.Label label1;
     }
 }

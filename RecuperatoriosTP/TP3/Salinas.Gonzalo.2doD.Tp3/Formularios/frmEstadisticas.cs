@@ -73,7 +73,7 @@ namespace Formularios
             }
             else
             {
-                MessageBox.Show("Debe seleccionar una opcion para ordenar la lista.");
+                MessageBox.Show("Debe seleccionar una opcion donde dice MANERA DE ORDENAR para ordenar la lista.", "Error con el ordenamiento", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         /// <summary>
@@ -106,7 +106,7 @@ namespace Formularios
             }
             else
             {
-                MessageBox.Show("Debe seleccionar una opcion para calcular la cantidad de personas con estudios secundarios.");
+                MessageBox.Show("Debe seleccionar una opcion donde dice FILTRAR NIVEL SECUNDARIO para calcular la cantidad de personas con estudios secundarios.", "Error con el calculo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         /// <summary>
