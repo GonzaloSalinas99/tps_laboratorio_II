@@ -53,10 +53,14 @@ namespace Formularios
                         secundario = ESecundario.Incompleto;
                     }
 
-                        _ = listaPersonas + new Persona(txtNombre.Text, txtApellido.Text, txtDocumento.Text, int.Parse(txtEdad.Text), genero, int.Parse(txtSalario.Text), secundario, VerificarPaisNacido(cmbPais));
-                        MessageBox.Show("Se agrego de manera correcta a la persona");
-                        Close();
+                    _ = listaPersonas + new Persona(txtNombre.Text, txtApellido.Text, txtDocumento.Text, int.Parse(txtEdad.Text), genero, int.Parse(txtSalario.Text), secundario, VerificarPaisNacido(cmbPais));
+                    MessageBox.Show("Se agrego de manera correcta a la persona");
+                    Close();
 
+                }
+                else
+                {
+                    MessageBox.Show("Revise la informacion ingresada. Deben estar todos los campos completos.", "Error en la carga.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
